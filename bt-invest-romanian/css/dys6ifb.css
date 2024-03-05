@@ -1,0 +1,61 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ff-meta-serif-web-pro:
+ *   - http://typekit.com/eulas/0000000000000000773599b7
+ *   - http://typekit.com/eulas/0000000000000000773599ad
+ * pt-sans:
+ *   - http://typekit.com/eulas/000000000000000077359b88
+ *   - http://typekit.com/eulas/000000000000000077359b8a
+ *   - http://typekit.com/eulas/000000000000000077359b8f
+ * rift:
+ *   - http://typekit.com/eulas/00000000000000007735b228
+ *
+ * © 2009-2022 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-05-12 06:46:31 UTC"}*/
+
+@import url("p.css");
+
+@font-face {
+font-family:"ff-meta-serif-web-pro";
+src:url("https://use.typekit.net/af/2ccb86/0000000000000000773599b7/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/2ccb86/0000000000000000773599b7/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/2ccb86/0000000000000000773599b7/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i6&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;
+}
+
+@font-face {
+font-family:"ff-meta-serif-web-pro";
+src:url("https://use.typekit.net/af/c00e0b/0000000000000000773599ad/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/c00e0b/0000000000000000773599ad/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/c00e0b/0000000000000000773599ad/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+
+@font-face {
+font-family:"pt-sans";
+src:url("https://use.typekit.net/af/02253d/000000000000000077359b88/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/02253d/000000000000000077359b88/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/02253d/000000000000000077359b88/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"pt-sans";
+src:url("https://use.typekit.net/af/4095d6/000000000000000077359b8a/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/4095d6/000000000000000077359b8a/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/4095d6/000000000000000077359b8a/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"pt-sans";
+src:url("https://use.typekit.net/af/de3684/000000000000000077359b8f/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/de3684/000000000000000077359b8f/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/de3684/000000000000000077359b8f/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"rift";
+src:url("https://use.typekit.net/af/ede55a/00000000000000007735b228/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/ede55a/00000000000000007735b228/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/ede55a/00000000000000007735b228/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+.tk-ff-meta-serif-web-pro { font-family: "ff-meta-serif-web-pro",serif; }
+.tk-pt-sans { font-family: "pt-sans",sans-serif; }
+.tk-rift { font-family: "rift",sans-serif; }

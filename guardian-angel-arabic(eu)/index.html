@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/intlphone.css">
+    <style>
+.overlay-dcZLiutECS { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 1000; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow-y: auto; display: none; }
+.lds-spinner-dcZLiutECS { color: official; display: inline-block; position: relative; width: 80px; height: 80px; }
+.lds-spinner-dcZLiutECS div { transform-origin: 40px 40px; animation: lds-spinner-dcZLiutECS 1.2s linear infinite; }
+.lds-spinner-dcZLiutECS div:after { content: " "; display: block; position: absolute; top: 3px; left: 37px; width: 6px; height: 18px; border-radius: 20%; background: #fff; }
+.lds-spinner-dcZLiutECS div:nth-child(1) { transform: rotate(0deg); animation-delay: -1.1s; }
+.lds-spinner-dcZLiutECS div:nth-child(2) { transform: rotate(30deg); animation-delay: -1s; }
+.lds-spinner-dcZLiutECS div:nth-child(3) { transform: rotate(60deg); animation-delay: -0.9s; }
+.lds-spinner-dcZLiutECS div:nth-child(4) { transform: rotate(90deg); animation-delay: -0.8s; }
+.lds-spinner-dcZLiutECS div:nth-child(5) { transform: rotate(120deg); animation-delay: -0.7s; }
+.lds-spinner-dcZLiutECS div:nth-child(6) { transform: rotate(150deg); animation-delay: -0.6s; }
+.lds-spinner-dcZLiutECS div:nth-child(7) { transform: rotate(180deg); animation-delay: -0.5s; }
+.lds-spinner-dcZLiutECS div:nth-child(8) { transform: rotate(210deg); animation-delay: -0.4s; }
+.lds-spinner-dcZLiutECS div:nth-child(9) { transform: rotate(240deg); animation-delay: -0.3s; }
+.lds-spinner-dcZLiutECS div:nth-child(10) { transform: rotate(270deg); animation-delay: -0.2s; }
+.lds-spinner-dcZLiutECS div:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1s; }
+.lds-spinner-dcZLiutECS div:nth-child(12) { transform: rotate(330deg); animation-delay: 0s; }
+@keyframes lds-spinner-dcZLiutECS {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+.visible-dcZLiutECS { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+</style>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <title>Guardian Angel App - تطبيق الملاك الحارس</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+    </header>
+    <main>
+        <h2 class="title">سأدفع لك 100,000$ دولار إذا لم أجعلك مليونيراً خلال ٦ أشهر هل تقبل التحدي؟</h2>
+        <div class="form__container">
+            <form action="" method="post" class="form"><input type="hidden" name="task" value="process">
+<input type="hidden" name="from" value="2124">
+<input type="hidden" name="country" value="ae">                <p class="form__title">تريد أن تعرف كيف كسب المحترفين المال عبر الإنترنت باستخدام الهواتف الذكية
+                    فقط؟ ملء هذا النموذج بعناية والحصول على حق الوصول الكامل إلى قاعدة المعرفة!</p>
+                <input type="text" name="name" placeholder="أدخل إسمك" required="">
+                <input type="text" name="lastname" placeholder="ادخل بريد الكتروني فعال" required="">
+                <input type="tel" name="phone" placeholder="الهاتف" required="" style="width:100% !important;">
+                <button class="btn" type="submit">البدء في كسب</button>
+                <input type="hidden" name="phonecc" class="phonecc" value="">
+                <input type="hidden" name="country" value="ae">
+            </form>
+            <div class="video__container">
+                <video class="video" poster="images/poster.avif" src="media/arabianvideo.mp4" controls=""></video>
+                <div class="live">
+                    <p>
+                        نتائج مباشرة
+                    </p>
+                    <img class="image__live" src="images/live.gif" alt="live">
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info__item">
+                <p>أرباح حلال طبقاً للشريعة</p>
+                <img class="image" src="images/halal.png" alt="halal">
+            </div>
+            <div class="info__item">
+                <p> بدون مخاطرة علي الإطلاق</p>
+                <img class="image" src="images/no_risk.png" alt="halal">
+            </div>
+            <div class="info__item">
+                <p>بدون خبرة مسبقة</p>
+                <img class="image" src="images/no_experience.png" alt="">
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/intlphone.js"></script>
+<script type="text/javascript">
+function intlTelSetGeoCode( code ) {
+	var geofields = document.querySelectorAll("input[name=country]");
+	for ( var gid = 0; gid < geofields.length; gid++ ) geofields[gid].value = code;
+}
+function intlTelSetPhoneCode( code ) {
+	var phonecode = document.querySelectorAll(".phonecc");
+	for ( var pid = 0; pid < phonecode.length; pid++ ) phonecode[pid].value = code;
+}
+var allthephonefields = document.querySelectorAll("input[name=phone]");
+var initialphonecc = 0;
+var initialphonegc = false;
+for ( var atpi = 0; atpi < allthephonefields.length; atpi++ ) {
+	var iti = window.intlTelInput( allthephonefields[atpi], {
+    "initialCountry": "ae",
+    "nationalMode": false,
+    "autoPlaceholder": "aggressive",
+    "formatOnDisplay": true,
+    "separateDialCode": true,
+    "onlyCountries": [
+        "ae"
+    ]
+});
+	var itg = iti.getSelectedCountryData();
+	if ( itg.dialCode ) initialphonecc = itg.dialCode;
+	if ( itg.iso2 ) initialphonegc = itg.iso2;
+	allthephonefields[atpi].addEventListener( "countrychange", function( event ) {
+		var iti = window.intlTelInputGlobals.getInstance( event.target );
+		if ( iti != undefined ) {
+			var geo = iti.getSelectedCountryData();
+			intlTelSetPhoneCode( geo.dialCode );
+			intlTelSetGeoCode( geo.iso2 );
+		}
+	});
+}
+if ( initialphonecc ) intlTelSetPhoneCode( initialphonecc );
+if ( initialphonegc ) intlTelSetGeoCode( initialphonegc );
+</script><div class="overlay-dcZLiutECS"><div class="lds-spinner-dcZLiutECS"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><script>document.querySelectorAll('form').forEach( (e) => e.addEventListener('submit', () => document.querySelector('.overlay-dcZLiutECS').classList.add("visible-dcZLiutECS") ));</script>
+
+</body></html>

@@ -1,0 +1,173 @@
+form {
+  position: relative;
+  top: auto;
+  width: 100%;
+}
+
+.iti {
+  color: #333333;
+  font-size: 16px;
+  width: 100%;
+}
+
+.iti input {
+  padding-left: 15px;
+  max-width: 100%;
+  display: block;
+}
+
+.iti__flag-box {
+  margin-left: 6px;
+}
+
+.flag-icon {
+  width: 68px !important;
+  left: 10px;
+}
+
+.form-body .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.form-body .row [class*="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.f1t-form {
+  padding: 20px 10px;
+  background-image: url("../images/form-bg_1.jpg");
+}
+
+.f1t-form-field__label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.f1t-form__submit {
+  margin: 0 auto;
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+  position: relative;
+  color: #ffffff;
+  padding: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-image: linear-gradient(166deg, #156cff 1%, #0e49ff);
+  box-shadow: 0px 4px 20.9px 3.1px rgba(13, 13, 13, 0.43);
+  text-transform: uppercase;
+  min-height: 60px;
+  cursor: pointer;
+  white-space: normal;
+  width: 100%;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.f1t-form {
+  text-align: left;
+}
+
+.f1t-form__submit:hover {
+  font-size: 25px;
+}
+
+.f1t-form__row {
+  padding: 5px;
+}
+
+.f1t-form-field__label {
+  /*color: #ffffff;*/
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.f1t-form-field__error {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.f1t-form-field label {
+  display: block;
+}
+
+.f1t-form-field input,
+.f1t-form-field textarea,
+.f1t-form-field select {
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 16px;
+  line-height: 42px;
+  padding: 0 15px;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  height: 42px !important;
+  margin: 0 !important;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.f1t-form-field input:focus,
+.f1t-form-field textarea:focus,
+.f1t-form-field select:focus,
+.f1t-form-field input:hover,
+.f1t-form-field textarea:hover,
+.f1t-form-field select:hover {
+  border-color: #66afe9;
+}
+
+.f1t-form-field--error input,
+.f1t-form-field--error textarea,
+.f1t-form-field--error select {
+  border-color: red;
+}
+
+.f1t-form__footer {
+}
+
+.f1t-form-field--phone input {
+  padding-right: 6px;
+  padding-left: 52px;
+}
+
+.f1t-form-field__label {
+  font-weight: 400;
+  display: none;
+}
+
+.f1t-form-field--password .f1t-form-field__generate {
+  height: 42px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+  background-image: linear-gradient(166deg, #156cff 1%, #0e49ff);
+}
+
+.f1t-form-field--password .f1t-form-field__generate:hover {
+  opacity: 0.8;
+}
+
+.f1t-form-field--password .f1t-form-field__generate:active {
+  opacity: 1;
+}
+
+.f1t-footer {
+  margin-bottom: 16px;
+}
+
+.f1t-footer__links a {
+  text-decoration: none;
+  color: #322580;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+p {
+  font-size: 16px;
+}

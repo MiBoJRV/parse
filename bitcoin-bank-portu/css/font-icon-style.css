@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "bitcoin-revolution";
+  src: url("../fonts/bitcoin-revolution.ttf") format("truetype"),
+    url("../fonts/bitcoin-revolution.woff") format("woff"),
+    url("../images/bitcoin-revolution.svg#bitcoin-revolution")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="br"],
+[class*=" br"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "bitcoin-revolution" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brmoney:before {
+  content: "\e900";
+  color: #f2ca17;
+}
+.brshield:before {
+  content: "\e901";
+  color: #f2ca17;
+}
+.brstar .path1:before {
+  content: "\e902";
+  color: rgb(255, 220, 100);
+}
+.brstar .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 200, 80);
+}
+.braward-icon:before {
+  content: "\e904";
+}
+.brcheck-icon:before {
+  content: "\e905";
+}
+.brstep1-icon:before {
+  content: "\e906";
+}
+.brstep2-icon:before {
+  content: "\e907";
+}
+.brstep3-icon:before {
+  content: "\e908";
+}
+.brtarget-icon:before {
+  content: "\e909";
+}
+.brtechnology-icon:before {
+  content: "\e90a";
+}

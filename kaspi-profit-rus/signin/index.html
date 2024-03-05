@@ -1,0 +1,964 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/intlphone.css">
+    <style>
+.overlay-3kywpD4cIk { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 1000; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow-y: auto; display: none; }
+.lds-spinner-3kywpD4cIk { color: official; display: inline-block; position: relative; width: 80px; height: 80px; }
+.lds-spinner-3kywpD4cIk div { transform-origin: 40px 40px; animation: lds-spinner-3kywpD4cIk 1.2s linear infinite; }
+.lds-spinner-3kywpD4cIk div:after { content: " "; display: block; position: absolute; top: 3px; left: 37px; width: 6px; height: 18px; border-radius: 20%; background: #fff; }
+.lds-spinner-3kywpD4cIk div:nth-child(1) { transform: rotate(0deg); animation-delay: -1.1s; }
+.lds-spinner-3kywpD4cIk div:nth-child(2) { transform: rotate(30deg); animation-delay: -1s; }
+.lds-spinner-3kywpD4cIk div:nth-child(3) { transform: rotate(60deg); animation-delay: -0.9s; }
+.lds-spinner-3kywpD4cIk div:nth-child(4) { transform: rotate(90deg); animation-delay: -0.8s; }
+.lds-spinner-3kywpD4cIk div:nth-child(5) { transform: rotate(120deg); animation-delay: -0.7s; }
+.lds-spinner-3kywpD4cIk div:nth-child(6) { transform: rotate(150deg); animation-delay: -0.6s; }
+.lds-spinner-3kywpD4cIk div:nth-child(7) { transform: rotate(180deg); animation-delay: -0.5s; }
+.lds-spinner-3kywpD4cIk div:nth-child(8) { transform: rotate(210deg); animation-delay: -0.4s; }
+.lds-spinner-3kywpD4cIk div:nth-child(9) { transform: rotate(240deg); animation-delay: -0.3s; }
+.lds-spinner-3kywpD4cIk div:nth-child(10) { transform: rotate(270deg); animation-delay: -0.2s; }
+.lds-spinner-3kywpD4cIk div:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1s; }
+.lds-spinner-3kywpD4cIk div:nth-child(12) { transform: rotate(330deg); animation-delay: 0s; }
+@keyframes lds-spinner-3kywpD4cIk {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+.visible-3kywpD4cIk { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+</style>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KASPI Profit</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video-js.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/timer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <style>
+        body.unavailable {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        .iti__flag-container {
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body data-target="#mainNavbar" class="">
+   <div id="app">
+        <div class="topBarCTA">
+            <div class="countdownBox">
+                <span class="countdownTime" id="register-count1">54</span>
+                <i class="fa fa-arrow-left"></i>
+                <span class="countdownMessage">
+                    Пользователей на сайте
+                </span>
+            </div>
+            <div class="dateBox">
+                <span class="countdownTime" id="register-count2">15</span>
+                <i class="fa fa-arrow-left"></i>
+                <span>
+                    <span class="fa fa-exclamation-triangle"></span> Количество свободных мест
+                </span>
+            </div>
+        </div>
+        <section id="heroSection">
+            <div class="container">
+                <div class="heroRow">
+                    <img class="img-responsive heroLogo lazyload" alt="KASPI Profit" src="images/kaspi_profit-white.png">
+                    <h1 class="heroHeadline">KASPI Profit - зарабатывай от $1500 на инвестициях ежемесячно при минимальном депозите в 100$</h1>
+                </div>
+                <div class="row hero-block">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 hero-video">
+                        <div class="videoOuterWrap">
+                            <div id="mainVideo">
+                                <div class="component-ivideo">
+                                    <div class="videoWrapper">
+                                        <div id="video" data-setup="{ " controls":="" true,="" "autoplay":="" "preload":="" "auto",="" "controlbar":="" false,="" "fluid":="" true="" }"="" class="video-js vjs-show-big-play-button-on-pause vjs-big-play-centered vjs-paused vjs-fluid video-dimensions vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active" lang="de" role="region" aria-label="Video Player">
+                                            <video class="vjs-tech" data-setup="{ " controls":="" true,="" "autoplay":="" "preload":="" "auto",="" "controlbar":="" false,="" "fluid":="" true="" }"="" id="video_html5_api" tabindex="-1" preload="auto" autoplay="" src="media/kaspi_profit.mp4">
+                                                <source src="media/kaspi_profit.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; color: #fff; margin: 10px 0; font-size: 18px; font-weight: bold;">
+                            Посмотрите это видео, чтобы узнать больше об инновационной платформе KASPI Profit
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hero-form">
+                        <div class="contactForm top_form">
+                            <form class="form main-form reg-form" id="main-form" action="" method="post">
+
+<input type="hidden" name="task" value="process">
+<input type="hidden" name="click" value="9230695">
+<input type="hidden" name="flow" value="557">
+<input type="hidden" name="from" value="2590">
+<input type="hidden" name="country" value="kz"><input type="hidden" name="phonecc" class="phonecc" value="">
+<input type="hidden" name="country" value="kz">
+                                <h3>Оставьте ваш актуальный номер телефона, на который вы получите доступ к платформе</h3>
+                                <input type="hidden" name="answer">
+
+                                <div class="form-group  main-form__input">
+                                    <input class="form-control form-input form__input" name="name" placeholder="Имя" type="text" required="">
+                                </div>
+                                <div class="form-group  main-form__input">
+                                    <input class="form-control  form-input form__input" name="lastname" placeholder="Фамилия" type="text" required="">
+                                </div>
+
+                                <div class="form-group main-form__input">
+                                    <input class="form-control form__input" name="email" placeholder="Почта" type="email" required="">
+                                </div>
+
+                                <div class="form-group main-form__input">
+                                    <input class="form-control form-input " name="phone" type="tel" required="">
+                                </div>
+
+                                <div class="error" style="color: red;font-size: initial;"></div>
+                                <div class="form-group main-form__button">
+                                    <button class="btn secondary-solid-btn btn-block buttonSend" name="submitBtn" type="submit">
+                                        Начать зарабатывать
+                                    </button>
+                                </div>
+
+                            </form>
+
+                            <style>
+                                #main-form h3,
+                                .form-title {
+                                    text-align: center;
+                                    font-size: 18px;
+                                    margin: 15px 0;
+                                    color: #f5d33c;
+                                }
+
+                                input.form-control {
+                                    width: 100%;
+                                    margin-bottom: 5px;
+                                    padding: 10px;
+                                    border-radius: 6px;
+                                    border: 1px solid gray;
+                                }
+
+                                button.redBtn {
+                                    text-align: center;
+                                    width: 100%;
+                                    display: block;
+                                    background: #e62626;
+                                    color: white;
+                                    border: 0;
+                                    padding: 15px;
+                                    border-radius: 7px;
+                                    font-weight: 700;
+                                    cursor: pointer;
+                                    text-transform: uppercase;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="heroLogos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="flex-row">
+                            <img src="images/bank1.png" alt="" class="img-responsive">
+                            <img src="images/bank2.png" alt="" class="img-responsive">
+                            <img src="images/bank3.png" alt="" class="img-responsive">
+                            <img src="images/bank4.png" alt="" class="img-responsive">
+                            <img src="images/bank5.svg" alt="" class="img-responsive">
+                            <img src="images/bank6.png" alt="" class="img-responsive">
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-badge">
+                                        <span>1</span>
+                                    </div>
+                                    <p>
+                                        Смотрите видео
+                                    </p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-badge">
+                                        <span>2</span>
+                                    </div>
+                                    <p>
+                                        Заполняйте форму, чтобы создать бесплатную учетную запись
+                                    </p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-badge">
+                                        <span>3</span>
+                                    </div>
+                                    <p>
+                                        Вы получите бесплатный звонок от специалиста
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="heroSuccess">
+            <div class="container">
+                <h1 class="sectionHeadline text-center">Зарабатывать от $1500? При минимальном депозите в 100$? Это возможно и вот как:</h1>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icon_expert-guidance.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="feature-name">
+                                Советы экспертов
+                            </div>
+                            <div class="feature-text">
+                                KASPI Profit предлагает вам профессиональные советы от финансовых экспертов и помогает вам зарабатывать больше.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icon_powerful-technology.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="feature-name">
+                                Мощная технология
+                            </div>
+                            <div class="feature-text">
+                                KASPI Profit использует новейшие передовые технологии, чтобы гарантировать вам прибыль.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/icon_earn-instantly.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="feature-name">
+                                Зарабатывай мгновенно!
+                            </div>
+                            <div class="feature-text">
+                                Невероятная технология KASPI Profit позволяет вам начать зарабатывать деньги с момента регистрации.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="lead-big text-center heroParagraph">
+                    Наши первые участники во всем Казахстане уже зарабатывают сотни тысяч тенге , так почему же вы еще этого не сделали? <a href="#heroSection" style="text-decoration: none;">Зарегистрируйтесь сегодня</a> и начните зарабатывать уже завтра.
+                    Да, так просто.
+                </p>
+            </div>
+        </section>
+        <hr class="divider">
+        <section id="heroTrading">
+            <div class="container">
+                <h1 class="sectionHeadline" style="text-align: center;">
+                    Зарегистрируйтесь и начните зарабатывать прямо сейчас!
+                </h1>
+                <p class="lead">
+                    Благодаря новой технологии KASPI Profit вы можете начать зарабатывать сразу после регистрации. Вы даже получите экспертный совет от финансового специалиста, который объяснит, как работает приложение, и как правильно распорядиться своими инвестициями,
+                    чтобы уже через полгода выйти на доход более 5 000 000 тенге в месяц.
+                </p>
+                <p>
+                    Невероятное программное обеспечение KASPI Profit также делает всю работу за вас, поэтому вам не нужно ничего изучать, лишь следовать инструкциям. Софт подключен к магистрали финансовых рынков и зарабатывают деньги каждый раз, когда совершается очередная
+                    транзакция. Эта передовая технология меняет жизнь людей. KASPI Profit – ваш билет в мир инвестиций!
+                </p>
+            </div>
+        </section>
+        <hr class="divider">
+        <section id="cryptoMedia">
+            <h1 class="sectionHeadline text-center">СМИ пишут о нас</h1>
+            <div class="container">
+                <img src="images/screen_media.png" sizes="(min-width: 1200px) 1140px, (min-width: 992px) and (max-width:1199px) 940px, (min-width: 768px) and (max-width: 991px) 720px,  (min-width: 631px) and (max-width: 767px) 720px, (max-width: 630px) 570px, 100vw" alt="Криптомиллионеры в СМИ" width="1140" height="2000" class="img-responsive">
+            </div>
+        </section>
+        <section id="userReviews">
+            <div class="container">
+                <h1 class="sectionHeadline text-center">Отзывы</h1>
+                <div class="row flex-row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="user-review">
+                            <div class="user-profile">
+                                <div class="user-picture">
+                                    <img src="images/user_1.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h2 class="user-name">
+                                    Акмарал Баталова
+                                </h2>
+                            </div>
+                            <div class="user-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <div class="user-quote">
+                                Технология, лежащая в основе <b>KASPI Profit</b>, является новаторской. Она, за очень короткое время, обрабатывает огромное количество информации, при этом вы все еще можете самостоятельно изучать каждую деталь.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="user-review">
+                            <div class="user-profile">
+                                <div class="user-picture">
+                                    <img src="images/user_2.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h2 class="user-name">
+                                    Жулдызай Фортова
+                                </h2>
+                            </div>
+                            <div class="user-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <div class="user-quote">
+                                <b>KASPI Profit</b> безумно прост в использовании, а бесплатные советы экспертов о том, как заработать больше, помогают мне сейчас зарабатывать более 500 000 тенге.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="user-review">
+                            <div class="user-profile">
+                                <div class="user-picture">
+                                    <img src="images/user_3.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h2 class="user-name">
+                                    Ануар Нурпеисов
+                                </h2>
+                            </div>
+                            <div class="user-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <div class="user-quote">
+                                Самое невероятное открытие, которое я когда-либо делал. Это буквально приносит мне деньги каждый день, и мне не нужно ничего для этого делать.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="user-review">
+                            <div class="user-profile">
+                                <div class="user-picture">
+                                    <img src="images/user_4.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h2 class="user-name">
+                                    Жанибек Оразбеков
+                                </h2>
+                            </div>
+                            <div class="user-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <div class="user-quote">
+                                Честно говоря, лучшее, что я когда-либо делал. Программное обеспечение потрясающее, и помощь, которую оно оказывает, исключительна. Это изменит вашу жизнь.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="user-review">
+                            <div class="user-profile">
+                                <div class="user-picture">
+                                    <img src="images/user_5.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h2 class="user-name">
+                                    Динара Кошым
+                                </h2>
+                            </div>
+                            <div class="user-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                            </div>
+                            <div class="user-quote">
+                                Когда у меня наконец появилась возможность зарегистрироваться, я сразу же зарегистрировалась. В тот первый день я заработала более 200 000 тенге!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="user-review">
+                            <div class="user-profile">
+                                <div class="user-picture">
+                                    <img src="images/user_6.jpg" alt="" class="img-responsive">
+                                </div>
+                                <h2 class="user-name">
+                                    Асель Тулепова
+                                </h2>
+                            </div>
+                            <div class="user-rating">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <div class="user-quote">
+                                Я так рада, что меня пригласили в <b>KASPI Profit</b>. Это невероятный веб-сайт, который позволит вам осуществить свою мечту!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="famousPeople">
+            <div class="container">
+                <h1 class="text-center sectionHeadline">Известные имена в торговом бизнесе</h1>
+                <h2 class="text-center col-lg-8 col-lg-offset-2">Все эти люди заработали миллионы на фондовом рынке!</h2>
+            </div>
+            <div class="container famousPeopleInnerWrap">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                50 Cent
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Заработал более 7 миллионов евро благодаря инвестициям на фондовом рынке и сказал: «Идите в ногу со временем. Технологии меняются, люди должны меняться с ними».
+                            </p>
+                            <img src="images/50cent.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                Стив Джобс
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Ваше время ограничено, так что не тратьте его попусту, живя чужой жизнью... Не позволяйте шуму чужих мнений заглушать собственный внутренний голос. И самое главное, имейте мужество следовать своему сердцу и интуиции.
+                            </p>
+                            <img src="images/steve-jobs.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                Чайлдиш Гамбино
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Положитесь на инвест портфель, для его победы требуется время; это простое уравнение, которое должно быть выполнено, инвестируйте, набирайтесь терпения и ждите.
+                            </p>
+                            <img src="images/childish-gambino.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                Джон Макафи
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Вы не можете остановить такие вещи, как криптовалюты и инвестиционные рынки. Это будет повсюду, и миру придется приспосабливаться. Чем раньше вы это сделаете, тем счастливее вы будете в итоге.
+                            </p>
+                            <img src="images/john-mcafee.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                �&nbsp;ичард Брэнсон
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Моя философия заключается в том, что если у меня есть лишние деньги, я вкладываю их в новые проекты и не оставляю их без дела.
+                            </p>
+                            <img src="images/richard-branson.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                Уоррен Баффет
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Вам не обязательно быть гением. Инвестирование — это игра, в которой парень с IQ 130 побеждает парня с IQ 160.
+                            </p>
+                            <img src="images/warren-buffett.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                Владимир Ким
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Инвестирование должно напоминать наблюдение за тем, как сохнет краска или как растет трава. Будьте терпеливы и вы получите свое.
+                            </p>
+                            <img src="images/vladimir_kim.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="famousPeopleSinglePerson">
+                            <h3 class="famousPerson--name">
+                                Михаил Ломтадзе
+                            </h3>
+                            <p class="famousPerson--quote">
+                                Финансовый рынок это устройство перераспределения денег от нетерпеливых инвесторов к терпеливым.
+                            </p>
+                            <img src="images/mihail-lomtadze.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="appFeatures">
+            <div class="container">
+                <h1 class="text-center sectionHeadline">Преимущества онлайн-торговли</h1>
+                <h2 class="text-center sectionSubheadline">Это лучший способ вложить свои деньги</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/feature-icon-1.png" alt="" style="width:100%;" class="img-responsive lazyload">
+                            </div>
+                            <div class="feature-name">
+                                Зарабатывайте, когда другие торгуют
+                            </div>
+                            <div class="feature-text">
+                                С KASPI Profit вы можете зарабатывать деньги каждый раз, когда кто-то покупает, продает или использует свои акции! Представьте, что вы зарабатываете деньги на каждой транзакции в мире. Что ж, теперь вы можете сделать именно это. Люди во всем мире используют
+                                криптовалюту, онлайн транзакции, биржевые сделки, и теперь вы можете получать от этого выгоду каждый раз!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/feature-icon-2.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="feature-name">
+                                �&nbsp;еальные деньги, в реальном времени
+                            </div>
+                            <div class="feature-text">
+                                С KASPI Profit вы можете зарабатывать реальные деньги в режиме реального времени, прямо здесь и сейчас. Просто заполните форму, и с вами свяжется профессиональный трейдер, который научит вас, как именно. Но поторопитесь, это предложение не будет длиться
+                                вечно.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="images/feature-icon-3.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="feature-name">
+                                Технология следующего поколения
+                            </div>
+                            <div class="feature-text">
+                                KASPI Profit использует новейшие передовые технологии, чтобы гарантировать ваш выигрыш. С помощью невероятного программного обеспечения KASPI Profit отслеживает каждое движение рынка до мельчайших деталей. Таким образом, вы можете зарабатывать деньги
+                                на каждой биржевой-транзакции в мире.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <p class="lead text-center heroParagraph">
+                       Unsere Mitglieder auf der ganzen Welt verdienen Millionen mit <b>KASPI Profit</b>, also warum tun Sie
+                       das noch nicht? <a href="#topForm">Registrieren Sie sich noch heute</a> und werden Sie morgen Millionär. So
+                       einfach ist das.
+                    </p> -->
+            </div>
+        </section>
+        <section id="userTable">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="userTable-block">
+                            <h1 id="liveUsers" class="text-center sectionHeadline">Онлайн трейдер</h1>
+                            <div class="table-responsive" style="overflow-x: scroll;">
+                                <div id="tradersTableWrap">
+                                    <div class="tradersTableFadeOutWrap">
+                                        <div class="tradersTableFadeOut"></div>
+                                        <table width="100%" cellspacing="0" cellpadding="0" class="tradersTable table-striped">
+                                            <tbody>
+                                                <!-- <tr>
+                                                       <th width="130" scope="col">Пользователь</th>
+                                                       <th width="160" scope="col">Время</th>
+                                                       <th width="104" scope="col">Торговля</th>
+                                                       <th width="104" scope="col">Прибыль</th>
+                                                    </tr> -->
+                                                <tr>
+                                                    <th width="130" scope="col">Пользователь</th>
+                                                    <th width="90" scope="col">Прибыль</th>
+                                                    <th width="90" scope="col">Торговля</th>
+                                                    <th width="160" scope="col">Время</th>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        Н******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden; text-align: center;">
+                                                        0
+                                                    </td>
+                                                    <td class="tradersTableLoserCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden; text-align: center;">
+                                                        <pop>02:35:53</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        А******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$278</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:40:21</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        А******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$73</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:40:19</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        Б******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        0
+                                                    </td>
+                                                    <td class="tradersTableLoserCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:47</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        Л******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$213</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:30</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        Н******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$14</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:58</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        С******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$160</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:25</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        А******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$109</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:38</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        О******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        0
+                                                    </td>
+                                                    <td class="tradersTableLoserCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:21</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        М******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <b>$80</b>
+                                                    </td>
+                                                    <td class="tradersTableWinnerCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:50</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        А******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        0
+                                                    </td>
+                                                    <td class="tradersTableLoserCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:35:18</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="myhide signals__col">
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        Д******
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        0
+                                                    </td>
+                                                    <td class="tradersTableLoserCell" style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;">
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td style="height: 40px; line-height: 40px; font-size: 14px; overflow: hidden;text-align:center;">
+                                                        <pop>02:40:02</pop> <span>21/09/2020</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="polygon">
+            <div class="t-container index-z">
+                <div class="t-width t-width_12 t415__mainblock">
+                    <div class="t-cover__wrapper t-valign_middle">
+                        <div class="t415__content" data-hook-content="covercontent">
+                            <img class="" data-tu-max-width="800" data-tu-max-height="800" style="max-width:250px;" src="images/kaspi_profit-white.png" imgfield="img2" data-hook-clogo="coverlogo">
+                            <div class="t415__textwrapper t-width t-width_12">
+                                <div class="t415__title t-title t-title_md" field="title">
+                                    Количество пользователей платформы лимитировано
+                                </div>
+                                <div class="t415__descr t-descr t-descr_md" field="descr">
+                                    Успейте зарегистрироваться и начать зарабатывать на выгодных инвестициях.<br> При минимальном депозите 100$.
+                                    <br> До закрытия регистрации осталось...
+                                </div>
+                            </div>
+                            <div id="t415__timer210558841" class="t415__timer">
+                                <div class="t415__col ">
+                                    <span class="t415__days t-title t-title_lg t415__number">
+                                        0
+                                    </span>
+                                    <div class="t415__text t-descr t-descr_xxs">
+                                        Дней
+                                    </div>
+                                </div>
+                                <div class="t415__col">
+                                    <span class="t415__hours t-title t-title_lg t415__number" id="hours">14</span>
+                                    <div class="t415__text t-descr t-descr_xxs">
+                                        Часов
+                                    </div>
+                                </div>
+                                <div class="t415__col">
+                                    <span class="t415__minutes t-title t-title_lg t415__number" id="minutes">45</span>
+                                    <div class="t415__text t-descr t-descr_xxs">
+                                        Минут
+                                    </div>
+                                </div>
+                                <div class="t415__col">
+                                    <span class="t415__seconds t-title t-title_lg t415__number" id="seconds">1</span>
+                                    <div class="t415__text t-descr t-descr_xxs">
+                                        Секунд
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t415__buttons">
+                                <a href="#openModal_form" style="text-decoration: none;">
+                                    <button type="button" class="timer__btn redBtn">
+                                        Зарегистрироваться
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <footer>
+               <div class="container">
+                  <div class="footer-disclaimer" style="color: #8d8d8d; font-size: 11.2px; text-align: center;">
+                     © 2022 All Rights Reserved - KASPI Profit
+                  </div>
+               </div>
+            </footer> -->
+        <!-- Start popup double -->
+        <div class="modal-form" id="modalFailure">
+            <p class="close-modal" href="#">×</p>
+            <div class="content">
+                <div class="sign-up-form-header text-center mb-4">
+                    <h5 class="mb-2 mt-4">
+                        Вы уже зарегистрировались на данный номер. Если вам нужен новый аккаунт, пройдите регистрацию на другой мобильный номер
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-form" id="modalFailureEmail">
+            <p class="close-modal" href="#">×</p>
+            <div class="content">
+                <div class="sign-up-form-header text-center mb-4">
+                    <h5 class="mb-2 mt-4">
+                        Вы уже зарегистрировались на данную электронную почту. Если вам нужен новый аккаунт, пройдите регистрацию на другую электронную почту.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-form" id="modalInvalid">
+            <p class="close-modal" href="#">×</p>
+            <div class="content">
+                <div class="sign-up-form-header text-center mb-4">
+                    <h5 class="mb-2 mt-4">
+                        Вы ввели неккоректную электронную почту. Пройдите регистрацию на другую электронную почту.
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <!-- End popup double -->
+        <!-- Start modal form -->
+        <div id="openModal_form" class="modal_form">
+            <div class="modal-dialog_form">
+                <div class="modal-content_form">
+                    <div class="modal-header_form">
+                        <h3 class="modal-title_form text-center"></h3>
+                        <a href="#close_form" title="Закрыть" class="close_form">×</a>
+                    </div>
+                    <div class="modal-body_form">
+                        <div class="contactForm" style="background-image: url(images/bg_form.png);">
+                            <div class="form_header">
+                                <span style="font-size: 14px;">
+                                    <h3 style="text-align: center; margin-bottom: 12px;">
+                                        <span style="font-weight: bold; color: #000; line-height: 1.3; font-size: 20px;">
+                                            Оставьте ваш актуальный номер телефона, на который вы получите доступ к платформе
+                                        </span>
+                                </h3>
+                                </span>
+                            </div>
+                            <form class="form main-form reg-form" action="" id="modal-form" method="post">
+
+<input type="hidden" name="task" value="process">
+<input type="hidden" name="click" value="9230695">
+<input type="hidden" name="flow" value="557">
+<input type="hidden" name="from" value="2590">
+<input type="hidden" name="country" value="kz"><input type="hidden" name="phonecc" class="phonecc" value="">
+<input type="hidden" name="country" value="kz">
+
+                                <input type="hidden" name="answer">
+
+
+                                <div class="form-group  main-form__input">
+                                    <input class="form-control form-input form__input" name="name" placeholder="Имя" type="text" required="">
+                                </div>
+                                <div class="form-group  main-form__input">
+                                    <input class="form-control  form-input form__input" name="lastname" placeholder="Фамилия" type="text" required="">
+                                </div>
+
+                                <div class="form-group main-form__input">
+                                    <input class="form-control form__input" name="email" placeholder="Почта" type="email" required="">
+                                </div>
+
+                                <div class="form-group main-form__input">
+                                    <input class="form-control form-input " name="phone" type="tel" required="">
+                                </div>
+
+                                <div class="error" style="color: red; font-size: initial;"></div>
+                                <div class="form-group main-form__button">
+                                    <button class="btn secondary-solid-btn btn-block buttonSend" name="submitBtn" type="submit">
+                                        Начать зарабатывать
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modal form -->
+
+        <script src="js/jquery-1.12.4.min.js"></script>
+
+        <script src="js/timer.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/time-table.js"></script>
+        <!-- <script src="./Content/Pages/files/js/main.js"></script> -->
+
+
+        <style>
+            .iti {
+                width: 100%;
+            }
+        </style>
+<script type="text/javascript" src="js/intlphone.js"></script>
+<script type="text/javascript">
+function intlTelSetGeoCode( code ) {
+	var geofields = document.querySelectorAll("input[name=country]");
+	for ( var gid = 0; gid < geofields.length; gid++ ) geofields[gid].value = code;
+}
+function intlTelSetPhoneCode( code ) {
+	var phonecode = document.querySelectorAll(".phonecc");
+	for ( var pid = 0; pid < phonecode.length; pid++ ) phonecode[pid].value = code;
+}
+var allthephonefields = document.querySelectorAll("input[name=phone]");
+var initialphonecc = 0;
+var initialphonegc = false;
+for ( var atpi = 0; atpi < allthephonefields.length; atpi++ ) {
+	var iti = window.intlTelInput( allthephonefields[atpi], {
+    "initialCountry": "kz",
+    "nationalMode": false,
+    "autoPlaceholder": "aggressive",
+    "formatOnDisplay": true,
+    "separateDialCode": true,
+    "onlyCountries": [
+        "kz"
+    ]
+});
+	var itg = iti.getSelectedCountryData();
+	if ( itg.dialCode ) initialphonecc = itg.dialCode;
+	if ( itg.iso2 ) initialphonegc = itg.iso2;
+	allthephonefields[atpi].addEventListener( "countrychange", function( event ) {
+		var iti = window.intlTelInputGlobals.getInstance( event.target );
+		if ( iti != undefined ) {
+			var geo = iti.getSelectedCountryData();
+			intlTelSetPhoneCode( geo.dialCode );
+			intlTelSetGeoCode( geo.iso2 );
+		}
+	});
+}
+if ( initialphonecc ) intlTelSetPhoneCode( initialphonecc );
+if ( initialphonegc ) intlTelSetGeoCode( initialphonegc );
+</script><div class="overlay-3kywpD4cIk"><div class="lds-spinner-3kywpD4cIk"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><script>document.querySelectorAll('form').forEach( (e) => e.addEventListener('submit', () => document.querySelector('.overlay-3kywpD4cIk').classList.add("visible-3kywpD4cIk") ));</script>
+
+</div></body></html>

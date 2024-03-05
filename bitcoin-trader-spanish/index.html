@@ -1,0 +1,731 @@
+<!DOCTYPE html><html lang="en" data-lt-installed="true">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/intlphone.css"><style>
+.overlay-ne3I22AAMa { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 1000; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow-y: auto; display: none; }
+.lds-spinner-ne3I22AAMa { color: official; display: inline-block; position: relative; width: 80px; height: 80px; }
+.lds-spinner-ne3I22AAMa div { transform-origin: 40px 40px; animation: lds-spinner-ne3I22AAMa 1.2s linear infinite; }
+.lds-spinner-ne3I22AAMa div:after { content: " "; display: block; position: absolute; top: 3px; left: 37px; width: 6px; height: 18px; border-radius: 20%; background: #fff; }
+.lds-spinner-ne3I22AAMa div:nth-child(1) { transform: rotate(0deg); animation-delay: -1.1s; }
+.lds-spinner-ne3I22AAMa div:nth-child(2) { transform: rotate(30deg); animation-delay: -1s; }
+.lds-spinner-ne3I22AAMa div:nth-child(3) { transform: rotate(60deg); animation-delay: -0.9s; }
+.lds-spinner-ne3I22AAMa div:nth-child(4) { transform: rotate(90deg); animation-delay: -0.8s; }
+.lds-spinner-ne3I22AAMa div:nth-child(5) { transform: rotate(120deg); animation-delay: -0.7s; }
+.lds-spinner-ne3I22AAMa div:nth-child(6) { transform: rotate(150deg); animation-delay: -0.6s; }
+.lds-spinner-ne3I22AAMa div:nth-child(7) { transform: rotate(180deg); animation-delay: -0.5s; }
+.lds-spinner-ne3I22AAMa div:nth-child(8) { transform: rotate(210deg); animation-delay: -0.4s; }
+.lds-spinner-ne3I22AAMa div:nth-child(9) { transform: rotate(240deg); animation-delay: -0.3s; }
+.lds-spinner-ne3I22AAMa div:nth-child(10) { transform: rotate(270deg); animation-delay: -0.2s; }
+.lds-spinner-ne3I22AAMa div:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1s; }
+.lds-spinner-ne3I22AAMa div:nth-child(12) { transform: rotate(330deg); animation-delay: 0s; }
+@keyframes lds-spinner-ne3I22AAMa {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+.visible-ne3I22AAMa { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+</style>    
+    <style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .flag-wrapper i {
+        max-width: 80px;
+        height: auto;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%;
+      }
+
+      .iti {
+        width: 100%;
+      }
+    </style>
+    <style class="vjs-styles-dimensions">
+      .video-dimensions {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+    <link rel="stylesheet" href="css/flags.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="BTC Trader">
+    <!--    <link rel="stylesheet" href="files/forms.css">-->
+    <!--    <link rel="stylesheet" href="files/flow.css">-->
+
+    <!--    <link rel="stylesheet" href="files/funnel.css">-->
+
+    <!--    <link rel="icon" type="image/png" href="./files/icon.png"/>-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>BTC Trader</title>
+    <style id="bv-wavy-color-style">
+      .memorize_new_word {
+        text-decoration-color: #ff906e;
+      }
+    </style>
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <!-- <section class="intro-section-1">
+      <div class="container">
+        <p class="intro-p">
+          <b>WARNING</b>:<span>
+            Due to extremely high media demand, we will close registration as
+            of</span
+          >
+          <b
+            ><span data-init-adw="full_date" id="dateSpan"></span> -
+            <span data-i18n="">HURRY!</span>
+          </b>
+          <span class="countdown-span" id="timer" data-init-adw="timer"
+            >02:13</span
+          >
+        </p>
+      </div>
+    </section> -->
+
+    <section class="section1" id="top">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-4 logo">
+              <img src="images/logo-bitcoin-trader.png" alt="BTC Trader" class="img-responsive inline-block header-logo">
+            </div>
+            <div class="col-md-6 col-sm-8 hidden-xs">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="media">
+                    <div class="flag-wrapper float-left">
+                      <img id="flag" src="images/en.svg" width="80" alt="South Africa">
+                    </div>
+                    <div class="media-body text-right exc">
+                      <h5>
+                        <span data-i18n="">Exclusive for</span><br>
+                        <strong><span data-init-adw="country_name">UKRAINE</span><br>
+                          <span data-i18n="">Residents</span></strong>
+                      </h5>
+                      <strong> </strong>
+                    </div>
+                    <strong> </strong>
+                  </div>
+                  <strong> </strong>
+                </div>
+                <strong>
+                  <div class="col-sm-6" id="exampleNames">
+                    <div class="media notification-top" data-init="person">
+                      <div class="media-left">
+                        <img data-init-adw="person-image" alt="Notification Photo" class="img-circle" width="57" height="57" src="images/20.jpg">
+                      </div>
+                      <div class="media-body">
+                        <p>
+                          <span data-init-adw="person-name">Leon R.</span>
+                          <span data-i18n="" class="just-made">just made</span>
+                        </p>
+                        <h3>
+                          <span data-init="visitor-currency-symbol">$</span><span data-init-adw="person-amt">62</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </strong>
+              </div>
+              <strong>
+                <!-- row -->
+              </strong>
+            </div>
+            <strong>
+              <!-- col -->
+            </strong>
+          </div>
+          <strong> </strong>
+        </div>
+        <strong> </strong>
+      </header>
+      <strong>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 headline">
+              <h1 data-i18n="">Bitcoin Trader</h1>
+              <h2 data-i18n="">
+                Bitcoin está haciendo millonaria a la gente Y puedes convertirte
+                en el próximo millonario…
+              </h2>
+
+              <h4 class="h4">
+                Mira lo que personas famosas como <strong>Bill Gates</strong><span> y </span><strong>Richard Branson</strong>
+                <span>dicen</span>
+              </h4>
+            </div>
+          </div>
+          <!-- row -->
+
+          <div class="gap40-mobile"></div>
+
+          <div class="row">
+            <div class="col-md-8 col-sm-7">
+              <div class="embed-container">
+                <div id="video" class="video-js vjs-default-skin vjs-big-play-centered video vjs-fluid video-dimensions vjs-controls-enabled vjs-workinghover vjs-v7 vjs-has-started vjs-paused vjs-user-inactive" tabindex="-1" lang="en" role="region" aria-label="Video Player">
+                  <video class="vjs-tech" id="video_html5_api" tabindex="-1" preload="metadata" playsinline="playsinline" muted="" autoplay="" controls="">
+                    <source src="media/bitcoin.mp4" type="video/mp4">
+                    <track kind="subtitles" srclang="en" data-src-ar="/assets/subtitles/Spanish.vtt" data-srclang="es" data-src-at="/assets/subtitles/German.vtt" data-src-by="/assets/subtitles/Russian.vtt" data-src-bo="/assets/subtitles/Spanish.vtt" data-src-cl="/assets/subtitles/Spanish.vtt" data-src-co="/assets/subtitles/Spanish.vtt" data-src-cr="/assets/subtitles/Spanish.vtt" data-src-cu="/assets/subtitles/Spanish.vtt" data-src-dk="/assets/subtitles/Danish.vtt" data-src-do="/assets/subtitles/Spanish.vtt" data-src-ec="/assets/subtitles/Spanish.vtt" data-src-sv="/assets/subtitles/Spanish.vtt" data-src-ee="/assets/subtitles/Estonian.vtt" data-src-fo="/assets/subtitles/Danish.vtt" data-src-ge="/assets/subtitles/Russian.vtt" data-src-de="/assets/subtitles/German.vtt" data-src-it="/assets/subtitles/Italian.vtt" data-src-kz="/assets/subtitles/Russian.vtt" data-src-kg="/assets/subtitles/Russian.vtt" data-src-lv="/assets/subtitles/Latvian.vtt" data-src-lt="/assets/subtitles/Lithuanian.vtt" data-src-mx="/assets/subtitles/Spanish.vtt" data-src-md="/assets/subtitles/Russian.vtt" data-src-nl="/assets/subtitles/Dutch.vtt" data-src-no="/assets/subtitles/Norwegian.vtt" data-src-pa="/assets/subtitles/Spanish.vtt" data-src-pe="/assets/subtitles/Spanish.vtt" data-src-pl="/assets/subtitles/Polish.vtt" data-src-pr="/assets/subtitles/Spanish.vtt" data-src-ru="/assets/subtitles/Russian.vtt" data-src-es="/assets/subtitles/Spanish.vtt" data-src-se="/assets/subtitles/Swedish.vtt" data-src-ch="/assets/subtitles/German.vtt" data-src-ua="/assets/subtitles/Ukrainian.vtt" data-src-uz="/assets/subtitles/Russian.vtt" data-src-fr="/assets/subtitles/French.vtt" data-src-ko="/assets/subtitles/Korean.vtt" data-src-ae="/assets/subtitles/Arabic.vtt" data-src-fi="/assets/subtitles/Finnish.vtt" data-src-tw="/assets/subtitles/Chinese.vtt" data-src-cn="/assets/subtitles/Chinese.vtt" data-src-be="/assets/subtitles/French.vtt" data-src-br="assets/subtitles/Portuguese.vtt" data-src-pt="assets/subtitles/Portuguese.vtt" default="" src="">
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-5 test">
+              <div class="formwrap-outer">
+                <div id="formwrap" class="formwrap">
+                  <div class="form-header">
+                    <span data-i18n="Start Changing">COMIENZA A CAMBIAR TU</span>
+                    <span data-i18n="Your Life Today" class="text-green text-orange">VIDA AHORA</span>
+                  </div>
+                  <div class="form-body">
+                    <form class="form-wrapper" action="" method="post" id="input-form">
+                      <input type="hidden" name="task" value="process">
+<input type="hidden" name="click" value="9230422">
+<input type="hidden" name="flow" value="196">
+<input type="hidden" name="from" value="2125">
+<input type="hidden" name="country" value="ar">                      <div class="alert alert-danger hidden" role="alert" data-general-error=""></div>
+
+                      <div class="form-group input-wrapper relative-input-wrapper">
+                        <input name="name" placeholder="Ponga su primer nombre" class="form-control" required="">
+                        <div data-error-status="inactive" data-for-error="first_name">
+                          Your first name is too short (at least 2 characters)
+                        </div>
+                        <span data-check-icon="inactive" data-check-icon-for="first_name"><img src="images/check-icon.png" alt="✔"></span>
+                      </div>
+
+                      <div class="form-group input-wrapper relative-input-wrapper">
+                        <input name="last_name" placeholder="Ingrese su apellido" class="form-control" required="">
+                        <div data-error-status="inactive" data-for-error="last_name">
+                          Your last name is too short (at least 2 characters)
+                        </div>
+                        <span data-check-icon="inactive" data-check-icon-for="last_name"><img src="images/check-icon.png" alt="✔"></span>
+                      </div>
+
+                      <div class="form-group input-wrapper relative-input-wrapper">
+                        <input type="email" required="" name="email" placeholder="Introduce tu correo electrónico" class="form-control">
+                       
+                       
+                      </div>
+
+                      <div class="form-group input-wrapper relative-input-wrapper">
+                        <input type="tel" class="form-control error" name="phone" required="">
+                      </div>
+
+                      <div class="form-group input-wrapper">
+                        <button type="submit" class="register-btn">
+                        ¡COMIENCE AHORA
+                        </button>
+                      </div>
+                      </form></div>
+                      <input type="hidden" name="phonecc" class="phonecc" value="">
+                      <input type="hidden" name="country" value="ar">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+          </div>
+          <!-- row -->
+        
+        <!-- container -->
+      </strong>
+    </section>
+    <strong>
+      <div class="spacer"></div>
+
+      <section class="section2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 security-logos">
+              <img src="images/bitgo.png" alt="BitGo">
+              <img src="images/norton.png" alt="Norton">
+              <img src="images/secure-trading.png" alt="Secure Trading">
+              <img src="images/mcafee.png" alt="McAffee">
+            </div>
+            <div class="col-md-5 text-center">
+              <div class="bid-ask-wrapper">
+                <div class="bitcoin bid">
+                  <sup>BID</sup>
+                  <h2>
+                    <span data-init="visitor-currency-symbol">$</span>326.56
+                  </h2>
+                  <sup><i class="fa fa-caret-up"></i></sup>
+                </div>
+                <div class="bitcoin ask">
+                  <sup>ASK</sup>
+                  <h2>
+                    <span data-init="visitor-currency-symbol">$</span>329.52
+                  </h2>
+                  <sup><i class="fa fa-caret-up"></i></sup>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>
+                <span>¡Únete a nosotros y comienza a volverte rico con
+                  <strong class="visitor-country-tr-hidden">Bitcoin Trader!</strong></span>
+              </h1>
+
+              <p data-i18n="text-1">
+                BitcoinTrader es un grupo reservado exclusivamente a las
+                personas que quieren aprovechar los increíbles retornos que
+                ofrece Bitcoin y que han acumulado una fortuna haciéndolo.
+              </p>
+              <p data-i18n="text-2">
+                Los Miembros de BitcoinTrader disfrutan de retiros en todas
+                partes del mundo mientras ganan dinero desde su computador
+                portátil con unos pocos minutos de “trabajo” cada día.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section4" style="background-image: url(images/section4bg.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="whitebox first-box">
+                <img src="images/join1.png" alt="DESEMPEÑO CON PRESICIÓN LÁSER">
+                <h4 data-i18n="">DESEMPEÑO CON PRESICIÓN LÁSER</h4>
+                <p data-i18n="">
+                  No hay ninguna otra aplicación de trading en el mundo que se
+                  desempeñe con el nivel de 99,4% de precisión que Bitcoin
+                  Trader es capaz de lograr. Es por esto que los miembros en
+                  todo el mundo confían en nosotros para duplicar, triplicar o
+                  cuadruplicar su dinero.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="whitebox">
+                <img src="images/join2.png" alt="TECNOLOGÍA SUPERIOR">
+                <h4 data-i18n="">TECNOLOGÍA SUPERIOR</h4>
+                <p data-i18n="">
+                  El Software de Bitcoin Trader ha sido creado utilizando la
+                  tecnología más avanzada que el mundo del trading alguna vez ha
+                  visto. El Software está 0,01 segundos adelantado con relación
+                  a los mercados. Y si sabes algo sobre el trading, sabes que
+                  eso es increíblemente importante. Este “salto de tiempo” hace
+                  que el Software sea la aplicación de trading más consistente
+                  del planeta.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="whitebox">
+                <img src="images/join3.png" alt="APP DE TRADING GANADORA DE PREMIOS">
+                <h4 data-i18n="">APP DE TRADING GANADORA DE PREMIOS</h4>
+                <p data-i18n="">
+                  La aplicación Bitcoin Trader ha ganado una gran cantidad de
+                  premios. El premio más reciente que recibimos fue el #1 en la
+                  categoría de Software de operaciones de la US Trading
+                  Association.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section5">
+        <div class="transwhite">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-10">
+                <h1 data-i18n="">
+                  Escucha los testimonios de nuestros usuarios que confían en
+                  nuestro Software para financiar sus lujosos estilos de vida
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li style="background-image: url(images/testimonial1.jpg)">
+            <span class="sr-only">Testimonial Image</span>
+          </li>
+          <li style="background-image: url(images/testimonial2.jpg)">
+            <span class="sr-only">Testimonial Image</span>
+          </li>
+          <li style="background-image: url(images/testimonial3.jpg)">
+            <span class="sr-only">Testimonial Image</span>
+          </li>
+          <li style="background-image: url(images/testimonial4.jpg)">
+            <span class="sr-only">Testimonial Image</span>
+          </li>
+          <li style="background-image: url(images/testimonial5.jpg)">
+            <span class="sr-only">Testimonial Image</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section6">
+        <div class="container">
+          <div class="row vdivide">
+            <div class="col-md-3">
+              <div class="testimonial-wrap">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="images/testimoniala.png" alt="Testimonial Image">
+                  </div>
+                  <div class="media-body">
+                    <h4 data-i18n="">Mark K.</h4>
+                    <h5 data-i18n="">Fort Worth, TX</h5>
+                  </div>
+                </div>
+                <p>
+                  <em>
+                    "He sido un miembro de Bitcoin Trader solamente 47 días.
+                    ¡Pero mi vida ya ha cambiado! No solamente he logrado mis
+                    primeros100K$, también he conocido a personas increíbles en
+                    el proceso. ¡Gracias Bitcoin Trader!"</em>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="testimonial-wrap">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="images/testimonialb.png" alt="Testimonial Image">
+                  </div>
+                  <div class="media-body">
+                    <h4 data-i18n="">Jennifer A.</h4>
+                    <h5 data-i18n="">Irvine, CA</h5>
+                  </div>
+                </div>
+                <p>
+                  <em>"Finalmente sé lo que es vivir el sueño. Ya no me siento en
+                    la parte de afuera mirando a los demás conforme se
+                    divierten. Bitcoin Trader me ha permitido retirarme temprano
+                    y vivir el estilo de vida del 1%."</em>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="testimonial-wrap">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="images/testimonialc.jpg" alt="Testimonial Image">
+                  </div>
+                  <div class="media-body">
+                    <h4 data-i18n="">Ernest I.</h4>
+                    <h5 data-i18n="">Orem, UT</h5>
+                  </div>
+                </div>
+                <p>
+                  <em>"Sorprendentemente, solía ser un inversionista en Wall
+                    Street. Y nunca he visto una cosa similar en mis 10 años en
+                    la empresa. Mis colegas pensaron que estaba loco al dejar la
+                    firma para invertir con el Software Bitcoin Trader a tiempo
+                    completo. $384,594 en ganancias después, todos mis colegas
+                    ahora me están ROGANDO que los deje entrar."</em>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="testimonial-wrap">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="images/testimoniald.png" alt="Testimonial Image">
+                  </div>
+                  <div class="media-body">
+                    <h4 data-i18n="">Steven H.</h4>
+                    <h5 data-i18n="">Niagara Falls, NY</h5>
+                  </div>
+                </div>
+                <p>
+                  <em>"Hace dos semanas me despidieron. Sin opciones restantes,
+                    pensé que mi vida se había terminado. Ahora estoy ganando
+                    más de 1,261.42$ cada día. Y por primera vez en 2 meses, mi
+                    cuenta no está vacía. ¡Gracias Bitcoin Trader!"</em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section7" style="background-image: url(images/howitworks.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 data-i18n="">Cómo funciona</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="howbox">
+                <img src="images/step1.png" alt="Fill Out The Registration Form on This Page" class="img-responsive center-block">
+                <h4 class="step-title" data-i18n="">PASO 1</h4>
+                <h4>
+                  <span data-i18n="">Llene el formulario de registro de la página</span>
+                </h4>
+                <p data-i18n="">
+                  Una vez que sea aceptado su registro, automáticamente se
+                  convertirá en el miembro más nuevo de The Bitcoin Trader. Esto
+                  significa que podrá reclamar sus bitcoins del software de
+                  operaciones gratis.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="howbox">
+                <img src="images/step2.png" alt="Fund Your Account" class="img-responsive center-block">
+                <h4 class="step-title" data-i18n="">PASO 2</h4>
+                <h4 data-i18n="">Transfiera fondos a su cuenta</h4>
+                <p>
+                  <span data-i18n="">Como en cualquier negocio, necesita un capital para poder
+                    comenzar. Entonces, para comenzar a operar con The Bitcoin
+                    Trader, debe invertir cualquier cantidad que desee, desde
+                    250 € en adelante.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="howbox">
+                <img src="images/step3.png" alt="Start Profiting" class="img-responsive center-block">
+                <h4 class="step-title" data-i18n="">PASO 3</h4>
+                <h4 data-i18n="">Comience a beneficiarse</h4>
+                <p data-i18n="">
+                  Haga clic para disfrutar de un trading preciso y automático
+                  potenciado por un algoritmo que ha sido galardonado con
+                  diversos premios. También puede ver el manual de trading si
+                  prefiere hacer las operaciones usted mismo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer2"></div>
+
+      <section class="section8">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="text-center" data-i18n="">Preguntas frecuentes</h1>
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/q.png" alt="Question" class="question">
+                </div>
+                <div class="media-body">
+                  <h2 data-i18n="">¿Qué tipo de resultados puedo esperar?</h2>
+                  <p>
+                    Los miembros de Bitcoin Trader se benefician normalmente de
+                    un mínimo de 1,300$ al día.
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/q.png" alt="Question" class="question">
+                </div>
+                <div class="media-body">
+                  <h2 data-i18n="">
+                    ¿Cuántas horas al día tengo que trabajar?
+                  </h2>
+                  <p data-i18n="">
+                    Nuestros miembros trabajan en promedio 20 minutos al día o
+                    menos. Debido a que el Software se encarga de las
+                    operaciones, la cantidad de “trabajo” requerida es mínima.
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/q.png" alt="Question" class="question">
+                </div>
+                <div class="media-body">
+                  <h2 data-i18n="">¿Cuánto es lo máximo que puedo ganar?</h2>
+                  <p data-i18n="">
+                    Your profits are unlimited Sus ganancias no tienen límites
+                    en The Bitcoin Trader. Algunos miembros ganaron su primer
+                    millón dentro de solo 61 días.
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/q.png" alt="Question" class="question">
+                </div>
+                <div class="media-body">
+                  <h2 data-i18n="">¿Cuánto cuesta el Software?</h2>
+                  <p data-i18n="">
+                    Los miembros de The Bitcoin Trader obtienen una copia de
+                    nuestro software de propiedad sin ningún cargo. Para
+                    convertirse en un miembro, simplemente llene el formulario
+                    de esta página.
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/q.png" alt="Question" class="question">
+                </div>
+                <div class="media-body">
+                  <h2 data-i18n="">¿Es como MLM o Affiliate Marketing?</h2>
+                  <p data-i18n="">
+                    No es como MLM, Affiliate Marketing ni nada de lo que se
+                    encuentra por ahí en la actualidad. El Software es
+                    potenciado por un algoritmo innovador que gana operaciones
+                    con un 99,4% de precisión.
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="media">
+                <div class="media-left">
+                  <img src="images/q.png" alt="Question" class="question">
+                </div>
+                <div class="media-body">
+                  <h2 data-i18n="">¿Hay algún cargo?</h2>
+                  <p data-i18n="">
+                    No hay cargos ocultos. No ha tasas para los operadores o
+                    comisiones. Todo su dinero es 100% suyo y es libre de
+                    retirarlo en el momento que lo desee sin ningún retraso.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section9">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <button onclick="document.getElementById('input-form').scrollIntoView({block: 'center', behavior: 'smooth'})" class="btn btn-start">
+                <span data-i18n="">¡COMIENCE AHORA</span>!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <!-- <ul class="footer-ul" style="list-style: none">
+                <style>
+                  .footer-ul li {
+                    display: inline-block;
+                    margin: 0 2px;
+                  }
+                </style>
+                <li>
+                  <a href="" data-i18n="">Home</a>
+                </li>
+                <li>
+                  <a class="fancy" href="" data-i18n="">Privacy Policy</a>
+                </li>
+                <li><a class="fancy" href="" data-i18n="">Terms</a></li>
+                <li>
+                  <a class="fancy" href="" data-i18n="">Earnings Disclaimer</a>
+                </li>
+                <li><a class="fancy" href="" data-i18n="">Spam Policy</a></li>
+                <li><a class="fancy" href="" data-i18n="">Contact Us</a></li>
+              </ul> -->
+              <p>
+                <span data-i18n="">Copyright</span> ©
+                <span class="current-year" data-init-adw="date">2021</span>
+                <span data-i18n="">BTC Trader. All Right Reserved.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </strong>
+    <div class="memorize_new_word_loading" style="display: none"></div>
+    <div class="bv-shadow-dom bv-shadow-dom-fade_out">
+      <div class="bv-shadow-dom-container"></div>
+    </div>
+
+    <link rel="stylesheet" href="https://bitcoin-adw.com/public/css/loader.css">
+
+    <script>
+      const flag = document.getElementById("flag");
+
+      fetch("https://get.geojs.io/v1/ip/country.json")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data.country);
+          const code = data.country.toLowerCase();
+
+          console.log(code);
+          flag.src = `https://flagcdn.com/${code}.svg`;
+        });
+    </script>
+    <script type="text/javascript" src="js/intlphone.js"></script>
+<script type="text/javascript">
+function intlTelSetGeoCode( code ) {
+	var geofields = document.querySelectorAll("input[name=country]");
+	for ( var gid = 0; gid < geofields.length; gid++ ) geofields[gid].value = code;
+}
+function intlTelSetPhoneCode( code ) {
+	var phonecode = document.querySelectorAll(".phonecc");
+	for ( var pid = 0; pid < phonecode.length; pid++ ) phonecode[pid].value = code;
+}
+var allthephonefields = document.querySelectorAll("input[name=phone]");
+var initialphonecc = 0;
+var initialphonegc = false;
+for ( var atpi = 0; atpi < allthephonefields.length; atpi++ ) {
+	var iti = window.intlTelInput( allthephonefields[atpi], {
+    "initialCountry": "mx",
+    "nationalMode": false,
+    "autoPlaceholder": "aggressive",
+    "formatOnDisplay": true,
+    "separateDialCode": true,
+    "onlyCountries": [
+        "mx",
+        "ar",
+        "gt",
+        "cr",
+        "pa",
+        "co"
+    ]
+});
+	var itg = iti.getSelectedCountryData();
+	if ( itg.dialCode ) initialphonecc = itg.dialCode;
+	if ( itg.iso2 ) initialphonegc = itg.iso2;
+	allthephonefields[atpi].addEventListener( "countrychange", function( event ) {
+		var iti = window.intlTelInputGlobals.getInstance( event.target );
+		if ( iti != undefined ) {
+			var geo = iti.getSelectedCountryData();
+			intlTelSetPhoneCode( geo.dialCode );
+			intlTelSetGeoCode( geo.iso2 );
+		}
+	});
+}
+if ( initialphonecc ) intlTelSetPhoneCode( initialphonecc );
+if ( initialphonegc ) intlTelSetGeoCode( initialphonegc );
+</script><div class="overlay-ne3I22AAMa"><div class="lds-spinner-ne3I22AAMa"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><script>document.querySelectorAll('form').forEach( (e) => e.addEventListener('submit', () => document.querySelector('.overlay-ne3I22AAMa').classList.add("visible-ne3I22AAMa") ));</script>  
+
+</body></html>

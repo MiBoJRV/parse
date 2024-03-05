@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 6, 2016, 11:21:00 AM
+    Author     : heminei
+*/
+
+/*# sourceMappingURL=site.css.map */
+
+footer a {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 15px;
+    padding-right: 15px;
+    line-height: 1;
+    border-right : 1px solid #fff;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer p { 
+    color:#fff;
+    text-align: center;
+}
+.footer a {
+    color:#fff;
+    text-align: center;
+    border-right : 1px solid #fff;
+}
+.footer a:last-child {
+    border-right : 0;
+    margin-right: 0px;
+}
+.footer-wrap {
+    text-align: center;
+}

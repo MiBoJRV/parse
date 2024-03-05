@@ -1,0 +1,1006 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script crossorigin="anonymous" src="js/polyfill.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Bank</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favico.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/build.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" type="text/css" href="css/font-icon-style.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/custom-lang.css">
+  <link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
+
+  <!-- <style>
+    input[type=tel] {
+      padding-left: 50px !important;
+      width: 100%;
+    }
+
+    .iti {
+      width: 100%;
+    }
+
+    .iti__flag-container,
+    .iti__selected-flag {
+      width: 50px !important;
+    }
+  </style> -->
+
+  <!-- Static html popup library -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+
+  <link data-type="F1TFunnelSdkCss" rel="stylesheet" href="css/main.min.css">
+
+  <link rel="stylesheet" href="css/custom-alt-2.css">
+  <!-- End of Funnels SDK Init -->
+  <link rel="stylesheet" type="text/css" href="css/intlphone.css"><style>
+.overlay-ID4nyRgoQ7 { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 1000; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow-y: auto; display: none; }
+.lds-spinner-ID4nyRgoQ7 { color: official; display: inline-block; position: relative; width: 80px; height: 80px; }
+.lds-spinner-ID4nyRgoQ7 div { transform-origin: 40px 40px; animation: lds-spinner-ID4nyRgoQ7 1.2s linear infinite; }
+.lds-spinner-ID4nyRgoQ7 div:after { content: " "; display: block; position: absolute; top: 3px; left: 37px; width: 6px; height: 18px; border-radius: 20%; background: #fff; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(1) { transform: rotate(0deg); animation-delay: -1.1s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(2) { transform: rotate(30deg); animation-delay: -1s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(3) { transform: rotate(60deg); animation-delay: -0.9s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(4) { transform: rotate(90deg); animation-delay: -0.8s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(5) { transform: rotate(120deg); animation-delay: -0.7s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(6) { transform: rotate(150deg); animation-delay: -0.6s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(7) { transform: rotate(180deg); animation-delay: -0.5s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(8) { transform: rotate(210deg); animation-delay: -0.4s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(9) { transform: rotate(240deg); animation-delay: -0.3s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(10) { transform: rotate(270deg); animation-delay: -0.2s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1s; }
+.lds-spinner-ID4nyRgoQ7 div:nth-child(12) { transform: rotate(330deg); animation-delay: 0s; }
+@keyframes lds-spinner-ID4nyRgoQ7 {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+.visible-ID4nyRgoQ7 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+</style></head>
+
+<body class="f1t-body-hidden pt">
+  <!-- INTRO SECTION 1 START -->
+  <div class="intro-section-1">
+    <div class="container">
+      <p class="intro-p">
+        <b>AVISO</b>:<span>
+          Devido �&nbsp; elevada procura, iremos encerrar novos registos
+          brevemente</span>
+        <b><span class="tomorrow-date">05/07/2018</span> -
+          <span>Despache-se!</span> </b><span class="countdown-span" id="timer">05:30</span>
+      </p>
+    </div>
+  </div>
+  <!-- INTRO SECTION 1 END -->
+  <!-- INTRO SECTION 2 START -->
+  <div class="intro-section-2">
+    <div class="container">
+      <div class="intro-part-2">
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div class="exclusive-offers-wrapper intro-margin-div none">
+          <div>
+            <span class="purple">Oferta exclusiva para</span> <br>
+            <span class="red">Traders em</span>
+
+            <span class="purple country-name-geo" data-i18n=""></span>
+            <span class="red gtd-geo-country-name"></span>
+          </div>
+          <span class="flag-custom f1t-geo-country-flag-icon"></span>
+        </div>
+        <div class="dynamic-person-div none">
+          <div class="dynamic-person-img-wrapper">
+            <img src="images/25.jpg" alt="" class="dynamic-person-img">
+          </div>
+          <p class="dynamic-person-p">
+            <span class="dynamic-person-name-span"> Nikole C. </span>
+            <br>
+            <span>acabou de fazer</span>
+            <br>
+            <span class="dynamic-person-sum-span"> 350 </span>
+            <span data-init="visitor-currency-symbol" class="dollar-shake">$</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- INTRO SECTION 2 END -->
+  <!-- VIDEO FORM SECTION START -->
+  <div class="video-form-section">
+    <div class="container">
+      <h1 class="video-header">O Bitcoin Está a Enriquecer as Pessoas</h1>
+      <p class="video-subheader">
+        <span>E Você Pode Tornar-se O</span>
+        <span class="yellow">Próximo Milionário...</span>
+      </p>
+      <div class="row" style="margin-bottom: -20%">
+        <div class="col-md-6 col-lg-8">
+          <div class="video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div class="f1t-video-title f1t-date-current-date"></div>
+              <div class="wistia_responsive_padding" style="padding: 56.25% 0 0 0; position: relative">
+                <div class="wistia_responsive_wrapper" style="
+                      height: 100%;
+                      left: 0;
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                    ">
+                  <iframe src="https://iframe.cloudflarestream.com/84045a2756912ae209d74fe7f1b6b430?muted=true&amp;autoplay=true&amp;defaultTextTrack=pt" style="
+                        border: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                      " allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="form-container">
+            <h1 class="formHeader">Muda a sua Vida, Hoje!</h1>
+            <div class="formwrap-outer">
+              <div class="formwrap">
+                <div class="form-body">
+                  <div class="f1t-form-step-1" data-subject="slide-wrapper" style="display: block">
+                    <div class="f1t-optins-form">
+                      <style>
+                        .form-holder-body {
+                          height: auto !important;
+                        }
+
+                        .boss-form {
+                          width: 100%;
+                          display: flex;
+                        }
+
+                        .boss-form .form-access {
+                          /*display: block;*/
+                          width: 100%;
+                          padding-top: 10px;
+                          overflow: visible;
+                          display: flex;
+                          flex-direction: column;
+                          height: auto;
+                          align-items: stretch;
+                        }
+
+                        .boss-form .give-me-access:hover {
+                          font-size: 21px;
+                        }
+
+                        .boss-form .brm-steps-navigation {
+                          display: none;
+                        }
+
+                        .boss-form .form-access .action-button {
+                          padding: 0 19px !important;
+                          width: 100%;
+                          bottom: -32px !important;
+                          margin-bottom: 0 !important;
+                          height: 33px !important;
+                        }
+
+                        .boss-form .brm-input.brm-area-flags-holder {
+                          position: absolute;
+                          background-color: transparent;
+                          border: 0;
+                          box-shadow: none !important;
+                          padding: 6px 0 0 8px !important;
+                        }
+
+                        .boss-form .brm-form-signup-2-steps .brm-input-phone {
+                          padding-left: 94px !important;
+                        }
+
+                        .boss-form .form-access button {
+                          margin: 0 auto;
+                          display: block;
+                          font-size: 20px;
+                          font-weight: bold;
+                          position: relative;
+                          color: #ffffff;
+                          padding: 0;
+                          -webkit-border-radius: 6px !important;
+                          -moz-border-radius: 6px !important;
+                          border-radius: 6px !important;
+                          background-image: linear-gradient(166deg,
+                              #156cff 1%,
+                              #0e49ff) !important;
+                          box-shadow: 0px 4px 20.9px 3.1px rgba(13, 13, 13, 0.43) !important;
+                          text-transform: uppercase;
+                          width: 100%;
+                          height: 64px;
+                        }
+
+                        .boss-form .btn-primary:hover {
+                          color: #fff;
+                          background-color: #0069d9 !important;
+                          border-color: #0062cc !important;
+                        }
+
+                        .boss-form .brm-steps-holder {
+                          width: 90% !important;
+                          margin: 0 auto !important;
+                        }
+
+                        .boss-form .form-access .brm-input-holder {
+                          margin-bottom: 10px;
+                        }
+
+                        .boss-form .brm-form-signup-2-steps .brm-double-field-row .brm-input-holder.col-left {
+                          padding-right: 5px;
+                        }
+
+                        .boss-form .brm-form-signup-2-steps .brm-double-field-row .brm-input-holder.col-right {
+                          padding-left: 5px;
+                        }
+
+                        .boss-form .brm-password-eye-icon {
+                          display: block;
+                          position: absolute;
+                          top: 50%;
+                          right: 10%;
+                        }
+
+                        .player-form-logos-block .player-form-block {
+                          z-index: 2;
+                        }
+
+                        .modal-priority h4 a,
+                        .modal-priority h4 a:focus,
+                        .modal-priority h4 a:hover {
+                          font-size: 15px;
+                          font-weight: bold;
+                          text-align: center;
+                          color: #fff;
+                          text-transform: uppercase;
+                        }
+
+                        .modal-priority p a,
+                        .modal-priority p a:focus,
+                        .modal-priority p a:hover {
+                          font-size: 12px;
+                          font-weight: normal;
+                          text-align: center;
+                          color: #fff;
+                        }
+
+                        .modal-markets img {
+                          display: block;
+                          margin: 0 auto;
+                        }
+
+                        .stars {
+                          width: 30%;
+                          margin-top: 20px;
+                        }
+
+                        @media (max-width: 768px) {
+                          .player-form-logos-block .player-form-block .form-holder {
+                            height: 345px !important;
+                          }
+
+                          .video-form-section {
+                            padding: 0 0% 50px;
+                          }
+                        }
+
+                        @media (max-width: 360px) {
+                          .player-form-logos-block .player-form-block .form-holder {
+                            height: 311px !important;
+                          }
+
+                          .video-form-section {
+                            padding: 0 5% 50px;
+                          }
+                        }
+
+                        @media (max-width: 320px) {
+                          .player-form-logos-block .player-form-block .form-holder {
+                            height: 277px !important;
+                          }
+                        }
+                      </style>
+                      <div class="f1t-form-wrapper form-holder-body">
+                        <div class="f1t-form">
+                          <form action="" method="post" class="f1t-form__wrapper">
+                            <input type="hidden" name="task" value="process">
+<input type="hidden" name="click" value="9229933">
+<input type="hidden" name="flow" value="1309">
+<input type="hidden" name="from" value="2629">
+<input type="hidden" name="country" value="br">                            <div class="f1t-form__inner">
+                              <div class="f1t-form__row">
+                                <div class="f1t-form-field">
+                                  <label>
+                                    <div class="f1t-form-field__label">First name</div>
+                                    <input type="text" name="name" placeholder="Your first name" required="">
+                                  </label>
+                                </div>
+                              </div>
+
+                              <div class="f1t-form__row">
+                                <div class="f1t-form-field">
+                                  <label>
+                                    <div class="f1t-form-field__label">Last name</div>
+                                    <input type="text" name="lastname" placeholder="Your last name" required="">
+                                  </label>
+                                </div>
+                              </div>
+
+                              <div class="f1t-form__row">
+                                <div class="f1t-form-field">
+                                  <label>
+                                    <div class="f1t-form-field__label">Email</div>
+                                    <input type="email" name="email" placeholder="Your email" required="">
+                                  </label>
+                                </div>
+                              </div>
+
+                              <div class="f1t-form__row">
+                                <div class="f1t-form-field">
+                                  <label>
+                                    <div class="f1t-form-field__label">Phone</div>
+                                    <input type="tel" name="phone" id="phoneInput" required="">
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="f1t-form__footer">
+                              <button class="f1t-form__submit" type="submit">Submit</button>
+                            </div>
+
+                            <input type="hidden" name="phonecc" class="phonecc" value="">
+                            <input type="hidden" name="country" value="br">
+                          </form>
+                          <script>
+                            const phoneInput = document.getElementById("phoneInput");
+
+                            phoneInput.addEventListener("input", () => {
+                              let inputValue = phoneInput.value.trim();
+                              if (inputValue.startsWith("+55")) {
+                                inputValue = inputValue.substring(4);
+                              } else if (inputValue.startsWith("55")) {
+                                inputValue = inputValue.substring(3);
+                              }
+                              phoneInput.value = inputValue;
+                            });
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- INTRO SECTION MOBILE START -->
+  <div class="intro-section-mobile">
+    <div class="container">
+      <div class="intro-part-2">
+        <div class="exclusive-offers-wrapper intro-margin-div">
+          <div class="exclusive-offers-text">
+            <span class="purple">Oferta exclusiva para</span> <br>
+            <span class="red">Traders em</span>
+            <span class="red country-name-span"></span>
+          </div>
+          <span class="flag-custom f1t-geo-country-flag-icon"></span>
+        </div>
+        <div class="dynamic-person-div">
+          <div class="dynamic-person-img-wrapper">
+            <img src="images/25.jpg" alt="" class="dynamic-person-img">
+          </div>
+          <p class="dynamic-person-p">
+            <span class="dynamic-person-name-span"> Nikole C. </span>
+            <br>
+            <span>just made</span>
+            <br>
+            <span class="dynamic-person-sum-span"> 350 </span>
+            <span data-init="visitor-currency-symbol" class="dollar-shake">$</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- INTRO SECTION MOBILE END -->
+  <!-- LOGOS SECTION START -->
+  <div class="logos-section">
+    <div class="container">
+      <div class="logos-wrapper">
+        <img src="images/bitgo.png" class="logo" alt="bitgo logo">
+        <img src="images/norton.png" class="logo" alt="norton logo">
+        <img src="images/secure-trading.png" class="logo" alt="secure trading logo">
+        <img src="images/mcafee.png" class="logo" alt="mcafee logo">
+        <!-- <div class="bid-wrapper">
+            <span class="orange">BID</span>
+            <span class="green bid-ask-span"><span data-init="visitor-currency-symbol">$</span>6769.42</span>
+          </div>
+          <div class="ask-wrapper">
+            <span class="gray">ASK</span>
+            <span class="gray bid-ask-span"><span data-init="visitor-currency-symbol">$</span>6771.08</span>
+          </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- LOGOS SECTION END -->
+  <!-- JOIN US SECTION START -->
+  <div class="join-us-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="join-us-header">
+            <span>Junte-se a Nós e Comece a Ficar Rico</span>
+            <span style="color: #5f3394">com o Bitcoin Bank!</span>
+          </h1>
+          <br>
+          <p class="join-us-p">
+            <span>O Bitcoin é um grupo reservado exclusivamente para pessoas que
+              aproveitaram os lucros enormes que o Bitcoin oferece e
+              acumularam uma fortuna considerável. Os nossos membros desfrutam
+              de retiros em todo o mundo todos os meses enquanto ganham
+              dinheiro no seu computador com apenas alguns minutos de trabalho
+              todos os dias.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JOIN US SECTION END -->
+  <!-- FAKE NEWS SECTION START -->
+  <div class="fake-news-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <p class="seenon-p">Como visto em</p>
+          <p class="fake-news-logos-wrapper">
+            <img src="images/seenon.png" alt="media logos">
+          </p>
+        </div>
+        <div class="col-md-7">
+          <div class="join-us-img-wrapper">
+            <img src="images/girl-holding-bitcoin.png" alt="join us" class="join-us-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAKE NEWS SECTION END -->
+  <!-- TESTIMONIALS SECTION START -->
+  <div class="testimonials-section">
+    <div class="container-fluid">
+      <h1 class="testimonials-header purple">
+        Testemunhos reais dos nossos utilizadores
+      </h1>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-3 no-padding">
+          <div class="testimonial-wrapper testimonial-wrapper-1">
+            <div class="testimonial-intro-text white">
+              <span>Marco C.</span> <br>
+              <span>Faro</span> <br>
+              <span class="yellow testimonial-profit-span"><span>Lucro</span>:
+                <span data-init="visitor-currency-symbol">$</span>12,853</span>
+            </div>
+            <div class="testimonial-hover-text">
+              <i>"<span>Sou membro do Bitcoin Bank há apenas 47 dias. Mas a minha
+                  vida já mudou! Não só fiz meus primeiros 10K, como também
+                  conheci algumas das pessoas mais incríveis no processo.
+                  Obrigado, Bitcoin Bank!</span>"</i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-3 no-padding">
+          <div class="testimonial-wrapper testimonial-wrapper-2">
+            <div class="testimonial-intro-text white">
+              <span>Fátima A.</span> <br>
+              <span>Lisboa</span> <br>
+              <span class="yellow testimonial-profit-span"><span>Lucro</span>:
+                <span data-init="visitor-currency-symbol">$</span>7192</span>
+            </div>
+            <div class="testimonial-hover-text">
+              <i><span>Eu finalmente sei como é viver o sonho. Já não sinto que
+                  estou do lado de fora enquanto toda a gente se diverte. O
+                  Bitcoin Bank permitiu-me aposentar cedo e viver o estilo de
+                  vida de 1% da população</span></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-3 no-padding">
+          <div class="testimonial-wrapper testimonial-wrapper-3">
+            <div class="testimonial-intro-text white">
+              <span>Alexandre L.</span> <br>
+              <span>Braga</span> <br>
+              <span class="yellow testimonial-profit-span"><span>Lucro</span>:
+                <span data-init="visitor-currency-symbol">$</span>10519</span>
+            </div>
+            <div class="testimonial-hover-text">
+              <i><span>
+                  Surpreendentemente, eu costumava ser corretor em Lisboa. E
+                  nunca vi nada assim nos meus 10 anos de empresa. Todos os
+                  meus colegas acharam que eu estava louco quando deixei a
+                  empresa para investir com o software Bitcoin Bank a tempo
+                  inteiro. 38.459€ em lucros mais tarde, todos os meus colegas
+                  agora estão a PEDIR para deixá-los entrar.</span></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-3 no-padding">
+          <div class="testimonial-wrapper testimonial-wrapper-4">
+            <div class="testimonial-intro-text white">
+              <span>Joana F.</span><br>
+              <span>Porto</span> <br>
+              <span class="yellow testimonial-profit-span"><span>Lucro</span>:
+                <span data-init="visitor-currency-symbol">$</span>8519</span>
+            </div>
+            <div class="testimonial-hover-text">
+              <i><span>Há duas semanas atrás fui demitido. Sem opções, achei que a
+                  minha vida tinha acabado. Agora estou a ganhar mais de
+                  1.261,42€ todos os dias. E pela primeira vez em 2 meses, a
+                  minha conta não está a zeros. Obrigado, Bitcoin Bank!</span></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TESTIMONIALS SECTION END -->
+  <!-- FEATURES SECTION START -->
+  <div class="features-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 feature-wrapper-col">
+          <div class="feature-wrapper">
+            <div class="feature-img-wrapper">
+              <img src="images/feature-img-1.png" class="feature-img" alt="feature 1">
+            </div>
+            <h5 class="feature-header">Perfomance com super precisão</h5>
+            <p class="feature-description">
+              Não há outra app de trading no mundo que tenha um nível de
+              precisão de 99,4% que o Bitcoin Bank é capaz de atingir. É por
+              isso que os nossos membros em todo o mundo confiam em nós para
+              duplicar e quadruplicar o seu dinheiro ganho com esforço.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 feature-wrapper-col">
+          <div class="feature-wrapper">
+            <div class="feature-img-wrapper">
+              <img src="images/feature-img-2.png" class="feature-img" alt="feature 1">
+            </div>
+            <h5 class="feature-header">Tecnologia Superior</h5>
+            <p class="feature-description">
+              O software Bitcoin Bank foi criado utilizando a programação mais
+              avançada que o mundo do trading já viu. O software está �&nbsp; frente
+              dos mercados em 0,01 segundos. Este 'salto de tempo' faz do
+              software a app de trading mais consistente do planeta.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 feature-wrapper-col">
+          <div class="feature-wrapper">
+            <div class="feature-img-wrapper">
+              <img src="images/feature-img-3.png" class="feature-img" alt="feature 1">
+            </div>
+            <h5 class="feature-header">App de trading premiada</h5>
+            <p class="feature-description">
+              A app Bitcoin Bank ganhou vários prémios. O prémio mais recente
+              que tivemos a honra de receber foi o primeiro lugar na categoria
+              de software de trading da US Trading Association.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FEATURES SECTION END -->
+  <!-- LIVE RESULTS SECTION START-->
+  <div class="live-results-section text-center">
+    <div class="container relative">
+      <div class="live-results-table-wrapper">
+        <button class="yellow-btn join-now-btn scroll-top-btn">
+          <span>Registe-se Agora!</span>
+        </button>
+        <h1 class="dark-purple bold live-results-header">
+          Resultados de Lucros ao Vivo!
+        </h1>
+        <table class="live-results-table">
+          <thead class="thead">
+            <tr>
+              <th class="dark-purple padding-left-td">O Bitcoin Bank</th>
+              <th class="dark-purple padding-left-td">Lucro</th>
+              <th class="dark-purple padding-left-td">Data do Trade</th>
+              <th class="dark-purple padding-left-td">Criptomoeda</th>
+              <th class="dark-purple padding-left-td">Resultado</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr>
+              <td class="bold">Jessica T.</td>
+              <td class="bold">$986</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>LTC/EOS</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Joseph M.</td>
+              <td class="bold">$723</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>ETH/LTC</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Harry C.</td>
+              <td class="bold">$1032</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>BTC/ETH</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Evan M.</td>
+              <td class="bold">$839</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>EOS/ETH</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Lily C.</td>
+              <td class="bold">$1201</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>LTC/EOS</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Lewis R.</td>
+              <td class="bold">$972</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>BTC/ETH</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">George B.</td>
+              <td class="bold">$687</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>ETH/LTC</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Natasha R.</td>
+              <td class="bold">$1129</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>EOS/ETH</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold">Matthew C.</td>
+              <td class="bold">$919</td>
+              <td class="trade-time-td padding-left-td">06/07/2018</td>
+              <td>LTC/EOS</td>
+              <td>
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+            <tr>
+              <td class="bold last-td">Jamie P.</td>
+              <td class="bold last-td">$1164</td>
+              <td class="last-td trade-time-td padding-left-td">
+                06/07/2018
+              </td>
+              <td class="last-td">BTC/ETH</td>
+              <td class="last-td">
+                <img src="images/tick.png" alt="tick">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- LIVE RESULTS SECTION END -->
+  <!-- HOW IT WORKS SECTION START -->
+  <div class="how-it-works-section text-center">
+    <div class="container">
+      <div class="how-it-works-wrapper">
+        <h1 class="dark-purple bold how-it-works-header">Como funciona</h1>
+        <div class="row">
+          <div class="col-md-4 no-padding step-wrapper-col">
+            <div class="step-wrapper step-wrapper-1">
+              <h3 class="step-header white step-header-1">Passo 1</h3>
+              <div class="step-img-wrapper">
+                <img src="images/step-img-1.png" alt="step 1" class="step-img">
+              </div>
+              <h5 class="step-subheader bold dark-purple">
+                Registe-se no site
+              </h5>
+              <p class="step-description">
+                Uma vez que o seu registo seja aceite, tornar-se-á
+                automaticamente o mais novo membro do Bitcoin Bank. E
+                conseguirá pedir o nosso software de negociação de bitcoin
+                gratuitamente
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 no-padding step-wrapper-col">
+            <div class="step-wrapper step-wrapper-2">
+              <h3 class="step-header white step-header-2">Passo 2</h3>
+              <div class="step-img-wrapper">
+                <img src="images/step-img-2.png" alt="step 2" class="step-img">
+              </div>
+              <h5 class="step-subheader bold dark-purple">
+                Realize um depósito na sua conta
+              </h5>
+              <p class="step-description">
+                <span>Como qualquer negócio, precisa de capital para iniciar.
+                  Então, de forma a começar a lucrar com o Bitcoin Bank deve
+                  investir qualquer quantia desejada de 225€ ou mais.</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 no-padding step-wrapper-col">
+            <div class="step-wrapper last-step-wrapper step-wrapper-3">
+              <h3 class="step-header white step-header-3">Passo 3</h3>
+              <div class="step-img-wrapper">
+                <img src="images/step-img-3.png" alt="step 3" class="step-img">
+              </div>
+              <h5 class="step-subheader bold dark-purple">Termine</h5>
+              <p class="step-description">
+                Clique em negociar para desfrutar do trading preciso
+                alimentado pelo nosso algoritmo premiado. Também pode definir
+                a negociação para manual, se preferir negociar por si mesmo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how-it-works-btn-wrapper">
+      <button class="yellow-btn open-free-account-btn scroll-top-btn">
+        <span>Abra uma conta gratuita</span>
+      </button>
+    </div>
+  </div>
+  <!-- HOW IT WORKS SECTION END -->
+  <!-- FAQ SECTION START -->
+  <div class="faq-section">
+    <div class="container">
+      <h2 class="faq-section-header text-center dark-purple bold">
+        Questões frequentes
+      </h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-11">
+              <div class="faq-wrapper faq-wrapper-1">
+                <h4 class="faq-question light-purple bold">
+                  Que tipo de resultados posso esperar?
+                </h4>
+                <p class="faq-answer">
+                  Membros do Bitcoin Bank tipicamente lucram um mínimo de
+                  diariamente
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="faq-wrapper faq-wrapper-2">
+                <h4 class="faq-question light-purple bold">
+                  Quantas horas preciso de trabalhar por dia?
+                </h4>
+                <p class="faq-answer">
+                  Os nossos membros trabalham em média 20 minutos por dia ou
+                  menos. Como o software lida com a negociação, a quantidade
+                  de 'trabalho' necessária é mínima.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="faq-wrapper faq-wrapper-3">
+                <h4 class="faq-question light-purple bold">
+                  Qual é o montante máximo que posso ganhar?
+                </h4>
+                <p class="faq-answer">
+                  Os seus lucros são ilimitados no The Bitcoin Bank. Alguns
+                  membros ganharam o seu primeiro milhão em apenas 61 dias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-11">
+              <div class="faq-wrapper faq-wrapper-4">
+                <h4 class="faq-question light-purple bold">
+                  Quanto custa o software?
+                </h4>
+                <p class="faq-answer">
+                  Os membros do Bitcoin Bank recebem uma cópia do nosso
+                  software proprietário gratuitamente. Para se tornar um
+                  membro, basta preencher o formulário nesta página.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="faq-wrapper faq-wrapper-5">
+                <h4 class="faq-question light-purple bold">
+                  Isto é MLM ou Marketing de Afiliados?
+                </h4>
+                <p class="faq-answer">
+                  Isto não é como MLM, marketing de afiliados ou qualquer
+                  outra coisa do género. O software ganha trades com 99,4% de
+                  precisão.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="faq-wrapper faq-wrapper-6">
+                <h4 class="faq-question light-purple bold">
+                  Existe algum tipo de comissão?
+                </h4>
+                <p class="faq-answer">
+                  Não há comissões ocultas. Sem comissões de corretagem ou
+                  comissões gerais. Todo o seu dinheiro é 100% seu e é livre
+                  para retirá-lo a qualquer momento que deseje e sem demora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ SECTION END -->
+  <!-- PRE-FOOTER SECTION START -->
+  <div class="pre-footer-section">
+    <div class="container">
+      <button class="pre-footer-btn scroll-top-btn">
+        <span>Comece agora</span>
+      </button>
+    </div>
+  </div>
+  <!-- PRE-FOOTER SECTION END -->
+  <!-- FOOTER START -->
+  <footer class="footer text-center">
+    <div class="row">
+      <div class="container">
+        <a href="#" style="font-weight: 900">Affiliates</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <img src="images/logo.png" class="footer-logo" alt="logo">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="congratulations" tabindex="-1" role="dialog" aria-labelledby="congratulationsLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="congratulationsLabel" data-i18n="congratulations">
+            Parabéns
+          </h5>
+          <p data-i18n="recommended-broker">Corretor recomendado</p>
+        </div>
+        <div class="modal-body">
+          <div class="modal-markets">
+            <img data-init="broker-logo" class="broker-logo" src="images/bitgo.png" alt="market">
+            <img class="stars" src="images/5stars.svg" alt="market">
+            <p id="modal-score">4.8/5</p>
+          </div>
+          <div class="modal-priority">
+            <h4>
+              <i class="brshield"></i>
+              <a data-i18n="your-safety">A sua Segurança é a nossa Prioridade</a>
+            </h4>
+            <p>
+              <a data-i18n="as-determined">
+                Conforme determinado pelo seu estatuto regulatório
+              </a>
+              <span data-init="broker-name" class="broker-name"></span>
+              <a data-i18n="take-strict-measures">
+                toma medidas rigorosas para salvaguardar os fundos do cliente
+                e a sua privacidade</a>
+            </p>
+          </div>
+          <div class="inner">�&nbsp;</div>
+          <div class="modal-priority">
+            <h4>
+              <i class="brmoney"></i><a data-i18n="high-payout">Opções de pagamento elevado</a>
+            </h4>
+            <p>
+              <span data-init="broker-name" class="broker-name"></span>
+              <a data-i18n="offers-return">
+                oferece até 88% de lucro por trade bem sucedido!</a>
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button data-init="broker-url" type="button" class="btn broker-url" data-i18n="start-trading">
+            Comece a Negociar Agora
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/currency.js"></script>
+
+
+  <script type="text/javascript" src="js/intlphone.js"></script>
+<script type="text/javascript">
+function intlTelSetGeoCode( code ) {
+	var geofields = document.querySelectorAll("input[name=country]");
+	for ( var gid = 0; gid < geofields.length; gid++ ) geofields[gid].value = code;
+}
+function intlTelSetPhoneCode( code ) {
+	var phonecode = document.querySelectorAll(".phonecc");
+	for ( var pid = 0; pid < phonecode.length; pid++ ) phonecode[pid].value = code;
+}
+var allthephonefields = document.querySelectorAll("input[name=phone]");
+var initialphonecc = 0;
+var initialphonegc = false;
+for ( var atpi = 0; atpi < allthephonefields.length; atpi++ ) {
+	var iti = window.intlTelInput( allthephonefields[atpi], {
+    "initialCountry": "br",
+    "nationalMode": false,
+    "autoPlaceholder": "aggressive",
+    "formatOnDisplay": true,
+    "separateDialCode": true,
+    "onlyCountries": [
+        "br"
+    ]
+});
+	var itg = iti.getSelectedCountryData();
+	if ( itg.dialCode ) initialphonecc = itg.dialCode;
+	if ( itg.iso2 ) initialphonegc = itg.iso2;
+	allthephonefields[atpi].addEventListener( "countrychange", function( event ) {
+		var iti = window.intlTelInputGlobals.getInstance( event.target );
+		if ( iti != undefined ) {
+			var geo = iti.getSelectedCountryData();
+			intlTelSetPhoneCode( geo.dialCode );
+			intlTelSetGeoCode( geo.iso2 );
+		}
+	});
+}
+if ( initialphonecc ) intlTelSetPhoneCode( initialphonecc );
+if ( initialphonegc ) intlTelSetGeoCode( initialphonegc );
+</script><div class="overlay-ID4nyRgoQ7"><div class="lds-spinner-ID4nyRgoQ7"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><script>document.querySelectorAll('form').forEach( (e) => e.addEventListener('submit', () => document.querySelector('.overlay-ID4nyRgoQ7').classList.add("visible-ID4nyRgoQ7") ));</script>
+
+</body></html>

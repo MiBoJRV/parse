@@ -1,0 +1,451 @@
+.gdprcookie * {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.gdprcookie {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	background-color: var(--bt-white);
+	color: #1B1862;
+	max-width: 482px;
+	max-height: 90%;
+	line-height: 20px;
+	letter-spacing: -0.5px;
+	padding: 44px 50px 52px 50px;
+	border-radius: 15px;
+	box-shadow: 0 26px 48px 1px rgba(0,0,0,0.11);
+	font-size: 14px;
+	font-family: "PT Sans", sans-serif;
+	text-align: justify;
+	overflow-y: auto;
+	z-index: 9999999999;
+}
+
+.gdprcookie h1,
+.gdprcookie h2 {
+	margin: 0 0 24px 0;
+	padding: 0px;
+	line-height: 23px;
+	letter-spacing: -0.04px;
+	font-size: 1.2em;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.gdprcookie a {
+	color: inherit;
+}
+
+.gdprcookie a.blue {
+	color: #009cdd;
+	text-decoration: underline !important;
+	cursor: pointer;
+}
+
+.gdprcookie .gdprcookie-intro p {
+	margin: 0 0 10px 0;
+}
+
+.gdprcookie .gdprcookie-intro p.big {
+	font-size: 14px;
+	padding: 0px;
+}
+
+.gdprcookie .close_gdpr {
+	cursor: pointer;
+	display: block ;
+	background-color: #ffc20e;
+	color: #000;
+	font-size: 1.1em;
+	position: absolute;
+	right: 0.5em;
+	display: none;
+	width:24px;
+	height:25px;
+	top:3px;
+	border-radius: 50%;
+	background-image: none !important;
+	text-indent: 0px !important;
+	display: none!important;
+}
+
+.gdprcookie .gdpr-ul {
+	list-style: none;
+	margin: 0 0 10px 0;
+}
+
+.gdprcookie .gdpr-ul li {
+	position: relative;
+	padding-left: 25px;
+}
+
+.gdprcookie .gdpr-ul li::before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 9px;
+	background-color: #247EE3;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	display: block;
+}
+.gdprcookie ul li p {
+	padding: 0px;
+	margin: 0px;
+}
+/* GDPR Cookie buttons */
+
+.gdprcookie .gdprcookie-buttons {
+	text-align: left;
+	display: inline-grid;
+	grid-auto-flow: column;
+	grid-auto-columns: auto;
+	grid-gap: 10px;
+}
+
+.gdprcookie .gdprcookie-buttons button {
+	background-color: var(--bt-blue);
+	color: var(--bt-white);
+	line-height: 1.4;
+	padding: 14px 32px;
+	border: 0;
+	border-radius: 12px;
+	display: block;
+	font-family: inherit;
+	font-size: 13px;
+	font-family: 700;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.gdprcookie-buttons button:disabled {
+	color: rgba(255,255,255,.5);
+}
+
+.gdprcookie-buttons button:not(.btn-ac) {
+	background-color: var(--gray-100);
+	color: var(--bt-blue);
+}
+
+/* GDPR Cookie types */
+
+.gdprcookie-types ul {
+	padding: 0;
+	margin: 0 0 36px 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+	.gdprcookie-types ul {
+		margin: 0 0 24px 0;
+	}
+}
+
+.gdprcookie-types li {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.gdprcookie-types li:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+	.gdprcookie-types li:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
+
+.gdprcookie-types input[type=checkbox] {
+	display: none;
+}
+
+.gdprcookie-types label {
+	position: relative;
+	color: var(--bt-black);
+	line-height: 24px;
+	margin-bottom: 10px;
+	padding: 0 0 0 36px !important;
+	display: block;
+	font-family: "PT Sans";
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.gdprcookie-types input[type=checkbox] + label:before {
+	content: '✓';
+	position: absolute;
+	top: 1px;
+	left: 0;
+	background-color: var(--gray-100);
+	color: var(--bt-white);
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid var(--gray-200);
+	border-radius: 12px;
+	display: block;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.gdprcookie-types input[type=checkbox]:checked + label:before {
+	background-color: var(--bt-blue);
+	border-color: var(--bt-blue);
+}
+
+.gdprcookie-types label:before, .gdprcookie-types input[type=checkbox]:checked + label::before {
+	border:0;
+}
+.gdprcookies-types input[type=checkbox]:not(:checked), .gdprcookies-types input[type=checkbox]:checked {
+
+}
+
+.gdprcookie-intro,
+.gdprcookie-types {
+	margin-bottom: 36px;
+}
+
+@media screen and (max-width: 768px) {
+	.gdprcookie {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: calc(100% - 80px);
+		max-width:100%;
+		height: fit-content;
+		padding: 42px 40px 36px 40px;
+		border-radius: 0px;
+		vertical-align: baseline;
+		box-sizing: content-box;
+	}
+
+	.big {
+		padding: 5px 0 0 0 !important;
+
+	}
+
+	.gdprcookie-intro,
+	.gdprcookie-types {
+		margin-bottom: 24px;
+		overflow-y: scroll;
+		max-height: calc(35vh);
+	}
+
+	.close {
+		right: 0.58em;
+		bottom: calc(47vh);
+	}
+}
+
+/* politica noua */
+
+.politica-noua {
+	max-width: 940px;
+	margin: auto;
+	padding: 13px 0;
+	color: #000;
+	position: relative;
+	font-size: 12px;
+}
+
+.politica-noua p {
+	/* display: grid;
+	grid-template-columns: 1fr 200px; */
+}
+
+.politica-noua p a {
+	/* background-color: #ffb10e;
+	color: #000;
+	fill: #000;
+	position: relative;
+	line-height: 20px;
+	padding: 0;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 45px; */
+	color: #000000;
+}
+
+.ava_2 {
+	width: 100%;
+	/*height: 70px;*/
+	background-color: var(--bt-white)0bd;
+	color: var(--bt-white);
+	position: relative;
+	/*left: 0;
+	top: 0;*/
+	text-align: left;
+	z-index: 20;
+	background-position: right center;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+@media(max-width:991px) {
+	.politica-noua .ava_2 {
+		/*
+		margin-top: -13px;
+		margin-bottom: -13px;
+		*/
+	}
+}
+
+@media(min-width:992px) {}
+
+.display {
+	display: block !important;
+}
+
+.close_oava {
+	position: absolute;
+	background: none;
+	display: block;
+}
+
+@media(max-width:991px) {
+	.close_oava {
+		top: 50%;
+		width: 10px;
+		height: 10px;
+		right: 15px;
+		transform: translateY(-50%);
+	}
+}
+
+@media(min-width:992px) {
+	.close_oava {
+		top: 15px;
+		right: -20px;
+		width: 10px;
+		height: 10px;
+	}
+}
+
+.close_oava img {
+	position: relative!important;
+	top: 0px!important;
+	left: 0px!important;
+	display: block;
+}
+
+@media(max-width:991px) {
+	.close_oava img {
+		width: 10px!important;
+		max-width: 10px!important;
+		min-width: 10px!important;
+		height: 10px!important;
+	}
+}
+
+@media(min-width:992px) {
+	.close_oava img {
+		width: 10px!important;
+		height: 10px!important;
+	}
+}
+
+@media(max-width:991px) {
+	.navig_2.politica-noua {
+		background: none;
+		font-size: 11px;
+		padding: 13px 15px;
+	}
+	 .politica-noua .ava_2 {
+		min-height: 0;
+
+	}
+}
+
+.ava_2 .navig_2.politica-noua a {
+	color: #322f26;
+	text-decoration: underline;
+}
+
+.yellow-banner {
+	background-color: var(--bt-white)0bd;
+	color: #000;
+	display: none;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.yellow-banner.display {
+	display: block;
+}
+
+.yellow-banner a,
+.yellow-banner a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.yellow-banner .action button {
+	position: relative;
+	background-color: transparent;
+	width: 10px;
+	height: 10px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border-radius: 0pc;
+	display: block;
+}
+
+.yellow-banner .action button:before,
+.yellow-banner .action button:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #936f05;
+	width: 12px;
+	height: 2px;
+	border-radius: 1px;
+}
+
+.yellow-banner .action button:before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.yellow-banner .action button:after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.yellow-banner .yellow-banner-container {
+	max-width: 940px;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: auto 10px;
+	grid-gap: 10px;
+}
+
+@media(max-width:991px) {
+	.yellow-banner .yellow-banner-container {
+		padding: 13px;
+	}
+}
+
+@media(min-width:992px) {
+	.yellow-banner .yellow-banner-container {
+		padding: 13px 0px;
+	}
+}
+
+.yellow-banner .yellow-banner-container > div {
+	align-self: center;
+}
